@@ -1,0 +1,147 @@
+{
+  "SubjectRoot-From-The-East": {
+    "JSONDataSubjectRoot": "From-The-East",
+    "HasSiteLinks": "No",
+    "Breadcrumbs": [
+      {
+      "name": "Home",
+      "link": "/"
+      },
+      {
+      "name": "From The East",
+      "link": "/"
+      }
+    ],
+    "listofSubjects": [
+      {
+      "SubjectTitle": "The Godly Qualities",
+      "SubjectDescription": "A series of posts on the first three verses in Chapter 16 of the Bhagavad Gita. These qualities are called the Godly or the Spiritual qualities of a human.",
+      "SubjectHugoURL": "/From-The-East/The-Godly-Qualities/"
+      },
+      {
+      "SubjectTitle": "The Ruin of a Human",
+      "SubjectDescription": "A series of posts from Chapter 2 (verses 62 & 63) of the Bhagavad Gita.",
+      "SubjectHugoURL": "/From-The-East/The-Ruin-of-a-Human/"
+      },
+      {
+      "SubjectTitle": "Zen Stories",
+      "SubjectDescription": "In this series, we present “Zen” Stories.",
+      "SubjectHugoURL": "/From-The-East/Zen-Stories/"
+      }
+    ]
+  },
+  "SubjectRoot-From-The-West": {
+    "JSONDataSubjectRoot": "From-The-West",
+    "HasSiteLinks": "No",
+    "Breadcrumbs": [
+      {
+      "name": "Home",
+      "link": "/"
+      },
+      {
+      "name": "From The West",
+      "link": "/"
+      }
+    ],
+    "listofSubjects": [
+      {
+      "SubjectTitle": "The Parables of Jesus",
+      "SubjectDescription": "Jesus is known by many titles including 'King of Kings', 'Light of the World' and 'Savior'. A title less likely to be heard these days is 'The Great Teacher'. In this series, the teachings of Jesus from the parables are revisited.",
+      "SubjectHugoURL": "/From-The-West/The-Parables-of-Jesus/"
+      },
+      {
+      "SubjectTitle": "The Desert Fathers",
+      "SubjectDescription": "West meets East in the teachings and sayings of the desert fathers.",
+      "SubjectHugoURL": "/From-The-West/The-Desert-Fathers/"
+      }
+    ]
+  },
+  "SubjectRoot-Readings": {
+    "JSONDataSubjectRoot": "Readings",
+    "HasSiteLinks": "No",
+    "Breadcrumbs": [
+      {
+      "name": "Home",
+      "link": "/"
+      },
+      {
+      "name": "Readings",
+      "link": "/"
+      }
+    ],
+    "listofSubjects": [
+      {
+      "SubjectTitle": "The Heart of Eastern Mystical Teaching",
+      "SubjectDescription": "Audio selections from the book 'The Heart of Eastern Mystical Teaching'. This work is often referred to as Hari Prasad Shastri's love letter to his guru Shri Dada.",
+      "SubjectHugoURL": "/Readings/Heart-of-Eastern-Mystical-Teaching/"
+      },
+      {
+      "SubjectTitle": "Works of C.S. Lewis",
+      "SubjectDescription": "Mention The Chronicles of Narnia and most will know C.S. Lewis as the author of that series of books.",
+      "SubjectHugoURL": "/Readings/Works-of-CS-Lewis/"
+      }
+    ]
+  },
+  "SubjectRoot-Reference": {
+    "JSONDataSubjectRoot": "Reference",
+    "HasSiteLinks": "No",
+    "Breadcrumbs": [
+      {
+      "name": "Home",
+      "link": "/"
+      },
+      {
+      "name": "Reference",
+      "link": "/"
+      }
+    ],
+    "listofSubjects": [
+      {
+      "SubjectTitle": "Sanskrit Words & Phrases",
+      "SubjectDescription": "Most of us do not read the Upanishads or other Hindu works in the original Sanskrit. Here is a list of some of the Sanskrit words and phrases used throughout this website. Pronunciation and English definitions are also given.",
+      "SubjectHugoURL": "/Reference/Sanskrit-Words/"
+      },
+      {
+      "SubjectTitle": "Reference Item 2",
+      "SubjectDescription": "TBD",
+      "SubjectHugoURL": "/Reference/Reference-Item-2/"
+      }
+    ]
+  },
+   "SubjectRoot-About": {
+    "JSONDataSubjectRoot": "About",
+    "HasSiteLinks": "No",
+    "Breadcrumbs": [
+      {
+      "name": "Home",
+      "link": "/"
+      },
+      {
+      "name": "About",
+      "link": "/"
+      }
+    ],
+    "listofSubjects": [
+      {
+      "SubjectTitle": "About This Site",
+      "SubjectDescription": "About this site.",
+      "SubjectHugoURL": "/About/About-This-Site/"
+      },
+      {
+      "SubjectTitle": "Color Palette",
+      "SubjectDescription": "Color Palette",
+      "SubjectHugoURL": "/About/Color-Palette/"
+      },
+      {
+      "SubjectTitle": "Site Map",
+      "SubjectDescription": "Site Map",
+      "SubjectHugoURL": "/About/Site-Map/"
+      },
+      {
+      "SubjectTitle": "Typography",
+      "SubjectDescription": "Typography",
+      "SubjectHugoURL": "/About/Typography/"
+      }
+    ]
+  }
+}

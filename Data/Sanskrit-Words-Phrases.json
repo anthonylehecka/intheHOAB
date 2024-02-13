@@ -1,0 +1,33 @@
+{
+  "SubjectRoot-From-The-East": {
+    "JSONDataSubjectRoot": "From-The-East",
+    "HasSiteLinks": "No",
+    "Breadcrumbs": [
+      {
+      "name": "Home",
+      "link": "/"
+      },
+      {
+      "name": "From The East",
+      "link": "/"
+      }
+    ],
+    "listofSubjects": [
+      {
+      "SubjectTitle": "The Godly Qualities",
+      "SubjectDescription": "A series of posts on the first three verses in Chapter 16 of the Bhagavad Gita. These qualities are called the Godly or the Spiritual qualities of a human.",
+      "SubjectHugoURL": "/From-The-East/The-Godly-Qualities/"
+      },
+      {
+      "SubjectTitle": "The Ruin of a Human",
+      "SubjectDescription": "A series of posts from Chapter 2 (verses 62 & 63) of the Bhagavad Gita.",
+      "SubjectHugoURL": "/From-The-East/The-Ruin-of-a-Human/"
+      },
+      {
+      "SubjectTitle": "Zen Stories",
+      "SubjectDescription": "In this series, we present “Zen” Stories.",
+      "SubjectHugoURL": "/From-The-East/Zen-Stories/"
+      }
+    ]
+  }
+}
