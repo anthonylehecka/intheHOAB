@@ -1,0 +1,50 @@
+/* --- */
+
+.pc-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  margin-top: 24px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.container-GQ-Post-HeroImage {
+  background-color: var(--Pine);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 2px solid var(--Border-Red);
+  margin: 0px 10px 0px 10px;
+  height: 772px;
+  width: 513px;
+}
+
+.container-GQ-Post-HeroImage img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+
+.hero-image-text {
+display: flex;
+flex-direction: column;
+padding-top: 25px;
+background-color: aquamarine;
+}
+
+.hero-image-attribution {
+font-family: "Libre Caslon Text";
+font-size: 1.0rem;
+text-align: right;
+margin: 4px 100px 0px 100px;
+}

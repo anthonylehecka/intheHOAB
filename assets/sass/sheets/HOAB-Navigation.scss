@@ -1,0 +1,182 @@
+/* * Heart of All Beings Site Header Logo and Navigation */
+
+  .hoab-site-header-01 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-top: 3px solid #FE7D6A;
+    border-bottom: 3px solid #E2A30A;
+    background-color: #E8BD8D;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hoab-site-header-01-logo {
+    float: left;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    padding-left: 16px;
+  }
+
+  .hoab-site-header-01-logo img {
+    max-height: 180px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    padding-top: 8px;
+  }
+
+  .hoab-site-header-01-navigation {
+    width: 66%;
+    padding: 0;
+    margin: auto;
+  }
+
+  .hoab-alt-navbar {
+    text-align: right;
+    margin-right:32px;
+    font-family: "Noto Sans";
+    font-size: 1.6rem;
+  }
+
+  /* a link */
+  .hoab-alt-navbar > a { text-decoration: none; }
+  /* unvisited link */
+  .hoab-alt-navbar > a:link { color: var(--Default-Body-Text-20pct-Lighter); }
+  /* visited link */
+  .hoab-alt-navbar > a:visited { color: var(--Default-Body-Text); }
+  /* mouse over link */
+  .hoab-alt-navbar > a:hover { color: var(--Coral); }
+
+
+/* ========================================================================= */
+/* Sidebar Navigation Menu */
+.sidebar-navmenu-main {
+  margin: 0px;
+  margin-bottom: 16px;
+  padding: 0px;
+}
+
+.sidebar-navmenu-main ul {
+  list-style: none;
+  margin: 0px;
+  padding-left: 24px;
+}
+
+.sidebar-navmenu-main ul li::before {
+  content: "\2022";
+  color: var(--Header-H6-Red);
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+.sidebar-navmenu-main ul li {
+  margin: 0px;
+  margin-top: 6px;
+  line-height: 2.6rem;
+}
+.sidebar-navmenu-main ul li a {
+  margin: 0px;
+  font-size: 1.8rem;
+  color: var(--Header-H4-Red);
+}
+
+.sidebar-navmenu-main ul li ul li::before {
+  content: "\2022";
+  color: var(--Gelasio-Green);
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+.sidebar-navmenu-main ul li ul li {
+  margin: 0px;
+  font-size: 16px;
+  line-height: 2.5rem;
+}
+.sidebar-navmenu-main ul li ul li a {
+  margin: 0px;
+  font-size: 1.6rem;
+  color: var(--Gelasio-Green);
+}
+
+
+/* * The Breadcrumb Line is navyby-url-breadcrumb on the left */
+/* * and navby-prev-next-post-breadcrumb on the right */
+.breadcrumb-line-flex-container {
+  display: flex;
+  flex-direction: row;
+}
+.breadcrumb-line-flex-left {
+  width: 50%;
+}
+.breadcrumb-line-flex-right {
+  width: 50%;
+}
+
+
+/* * BreadCrumbs (Site Tree Navigation by URL) */
+div.navby-url-breadcrumbs {
+  width: 100%;
+  border-style: none;
+  padding: 0;
+}
+.navby-url-breadcrumbs ul {
+  list-style: none;
+  margin: 0px;
+  padding-left: 0px;
+  font-size: 90%;
+}
+.navby-url-breadcrumbs ul li {
+  display: inline-block;
+  margin-right: 0px;
+}
+.navby-url-breadcrumbs ul li.url-separator {
+  font-size: 160%;}
+.navby-url-breadcrumbs ul li.prior-page-name {
+  color: var(--Breadcrumb-Hover);
+}
+.navby-url-breadcrumbs ul li a {
+  color: var(--Breadcrumb);
+  text-decoration: none;
+}
+.navby-url-breadcrumbs ul li a:hover {
+  color: var(--Breadcrumb-Hover);
+  text-decoration: none;
+}
+
+
+/* * BreadCrumbs (Posts Navigation by Prev|Current|Next Post) */
+div.navby-prev-next-post-breadcrumbs {
+  width: 100%;
+  border-style: none;
+  padding: 0;
+  justify-content: flex-end;
+  text-align: right;
+}
+.navby-prev-next-post-breadcrumbs ul {
+  list-style: none;
+  margin: 0px;
+  padding-left: 0px;
+  font-size: 90%;
+}
+.navby-prev-next-post-breadcrumbs ul li {
+  display: inline-block;
+  margin-right: 0px;
+}
+.navby-prev-next-post-breadcrumbs ul li.post-separator {
+  font-size: 160%;}
+.navby-prev-next-post-breadcrumbs ul li.thispage-gq-name {
+  color: var(--Breadcrumb-Hover);
+}
+.navby-prev-next-post-breadcrumbs ul li a {
+  color: var(--Breadcrumb);
+  text-decoration: none;
+}
+.navby-prev-next-post-breadcrumbs ul li a:hover {
+  color: var(--Breadcrumb-Hover);
+  text-decoration: none;
+}

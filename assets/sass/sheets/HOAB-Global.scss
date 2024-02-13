@@ -1,0 +1,224 @@
+
+/* * Heart of All Beings Global Variables */
+/* Today is January 12, 2024 Counter: 002*/
+
+:root {
+  --Brick: #7E2811;
+  /* * Body Text */
+  --Default-Body-Text: #7E2811;
+  --Default-Body-Text-20pct-Lighter: #B15B44;
+  /* * Redefines Body Text */
+  --Cinnamon-Text: #5C0013;
+  /* * Alternate Body Text */
+  --Boxed-Content-Background: #FFFAEB;
+  // --Content-Background: #F2EDDE;  /* 5% Darker than Area-Background */
+  // --Content-Background: #F5F0E1;  /* 4% Darker than Area-Background */
+  // --Content-Background: #F7F2E3;  /* 3% Darker than Area-Background */
+
+  --Content-Background: #FFF6E5;  /* A different approach */
+
+  /* * Content Boxes, etc. */
+  --Site-Background: #FCF7F7;
+  /* * Behind Image */
+  --Header-H1-Red: #D62D1A;
+  /* * H1 to H6 Gradually Darkens */
+  --Header-H2-Red: #BD1401;
+  --Header-H3-Red: #A30000;
+  --Header-H4-Red: #8A0000;
+  --Header-H5-Red: #700000;
+  --Header-H6-Red: #570000;
+  --Audio-Green: #C4E4B5;
+  --Audio-Orange: #FFBB72;
+  --Breadcrumb: #484837;
+  --Breadcrumb-Hover: #EE5500;
+  --Border-Red: #A52A2A;
+  --Border-Gold: #E2A30A;
+  --Bible-Text: #FF0000;
+  --Bible-Source: #A30000;
+  --Quote-Text: #234F1E;
+  --Quote-Source: #FF8C00;
+  --Quote-Text-Shadow: #D9D0BF;
+  --Quote-Source-Shadow: #D9D0BF;
+  --Coral: #FE7D6A;
+  --Dark-Orange: #FF8C00;
+  --Gelasio-Green: #7C795D;
+  --Honey: #EC9705;
+  --Old-Mauve: #673147;
+  --Orange: #ED7014;
+  --Pink: #F699CD;
+  --Pine: #234F1E;
+  --Saddle-Brown: #8B4513;
+  --Saffron: #FBB917;
+  --Salmon: #FF907F;
+  --Sanskrit-Red: #A52A2A;
+  --Tangerine: #FA8128;
+  --Tawny: #80471C;
+}
+/* * See articles on rem for this trick to make rem to px calculation easy */
+/* * Assumption for this trick is that the default px size of text is 16px in all browsers */
+/* * Makes font size in px = to 10px (62.5% of 16 = 10) */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--Default-Body-Text);
+  font-family: "Libre Caslon Text", serif;
+  font-size: 1.5rem;  /* * 10px times 1.5 =15px  */
+  font-style: normal;
+}
+
+h1 { font-size: 3.6rem; }  /* * =36px */
+h2 { font-size: 3.2rem; }  /* * =32px */
+h3 { font-size: 2.8rem; }  /* * =28px */
+h4 { font-size: 2.4rem; }  /* * =24px */
+h5 { font-size: 2.2rem; }  /* * =22px */
+h6 { font-size: 2.0rem; }  /* * =20px */
+
+h1 {
+  color: var(--Header-H1-Red);
+  font-family: "Cabin Condensed", sans-serif;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: var(--Header-H2-Red);
+  font-family: "Cabin Condensed", sans-serif;
+}
+h2.pagename-Gelasio-Green {
+  color: var(--Gelasio-Green);
+  font-family: "Gelasio", serif;
+  font-size: 3rem;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+h3 {
+  color: var(--Header-H3-Red);
+  font-family: "Cabin Condensed", sans-serif;
+}
+
+h4 {
+  color: var(--Header-H4-Red);
+  font-family: "Cabin Condensed", sans-serif;
+}
+
+h5 {
+  color: var(--Header-H5-Red);
+  font-family: "Cabin Condensed", sans-serif;
+}
+
+h6 {
+  color: var(--Header-H6-Red);
+  font-family: "Cabin Condensed", sans-serif;
+}
+
+hr {
+  border-top: 0.5px solid var(--Honey);
+  border-bottom: 0.5px solid #CCCCCC;
+}
+
+.boxed-gold-border {
+  border-color: var(--Border-Gold);
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+}
+.boxed-red-border {
+  border-color: var(--Border-Red);
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+}
+
+
+.Sanskrit-Block {
+  border-top: 2px solid var(--Salmon);
+  border-bottom: 2px solid var(--Salmon);
+  text-align: center;
+}
+
+.Sanskrit-Text {
+  font-family: "Sanskrit2003", serif;
+  font-size: 5.5rem;
+  color: var(--Sanskrit-Red);
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.Sanskrit-Text-Translation {
+  font-family: "Courgette", serif;
+  font-size: 2.8rem;
+  color: var(--Saddle-Brown);
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+
+.Sanskrit-Word-or-Phrase-Devanagari {
+  font-family: "Sanskrit2003", serif;
+  font-size: 5rem;
+  color: var(--Sanskrit-Red);
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.Sanskrit-Word-or-Phrase-Translation {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--Gelasio-Green);
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.Sanskrit-Word-or-Phrase-Pronunciation {
+  font-family: "Gentium Plus", serif;
+  font-size: 2rem;
+  color: #3A68C4;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.Sanskrit-Word-or-Phrase-Definition {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 1.4rem;
+  color: var(--Default-Body-Text);
+  margin: 0;
+  padding: 0;
+}
+
+
+/* * Spacers (Empty Space) */
+/* ! N.B. The 'Hot Pink' Background should never show as these spacers */
+/* !          should be applied to empty divs only. Otherwise even a simple */
+/* !          &nbsp; will make the spacer too large (vertically) */
+.spacer-1rem {
+  margin-top: 1rem;
+  background-color: #FF10F0;
+}
+.spacer-2rem {
+  margin-top: 2rem;
+  background-color: #FF10F0;
+}
+.spacer-3rem {
+  margin-top: 3rem;
+  background-color: #FF10F0;
+}
+.spacer-4rem {
+  margin-top: 4rem;
+  background-color: #FF10F0;
+}
+.spacer-5rem {
+  margin-top: 5rem;
+  background-color: #FF10F0;
+}
+
+/* * Spacer (<HR> Like */
+.thinline {
+  height: 0;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent;
+  border-top: 0.5px solid var(--Salmon);
+  border-bottom: 0.5px solid darkgray;
+  width: 90%;
+  text-align: center;
+}

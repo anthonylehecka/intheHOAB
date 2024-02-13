@@ -1,0 +1,146 @@
+/* ======================================================================= */
+/* HOME PAGE */
+/* Default Layout is 2 Columns */
+
+.css-pagegrid-homepage {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+  "gtaHP-page-header  gtaHP-page-header"
+  "gtaHP-page-content gtaHP-right-sidebar"
+  "gtaHP-page-footer  gtaHP-page-footer";
+}
+
+.pagegrid-homepage-header { grid-area: gtaHP-page-header;
+  padding-bottom: 20px;
+}
+
+/* Custom Element for readability. Set to display: block to equal <div>
+    (not so necessary on home page but vital on many pages */
+homepage-page-content {
+  display: block;
+}
+.pagegrid-homepage-page-content { grid-area: gtaHP-page-content;
+  background-color: var(--Boxed-Content-Background);
+  margin-left: 30px;
+  padding-left: 30px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.pagegrid-homepage-right-sidebar { grid-area: gtaHP-right-sidebar;
+  background-color: var(--Boxed-Content-Background);
+  margin-left: 20px;
+  margin-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+.pagegrid-homepage-footer { grid-area: gtaHP-page-footer;
+  background-color: var(--Salmon);
+  border-bottom: 2px solid whitesmoke;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+/* ======================================================================= */
+/* FULL WIDTH PAGE */
+/* Default Layout is 3 Columns */
+
+.css-pagegrid-fullwidth {
+  display: grid;
+  grid-template-columns: 5% auto 5%;
+  grid-template-areas:
+  "gtaFW-page-header  gtaFW-page-header  gtaFW-page-header"
+  "gtaFW-left-sidebar gtaFW-page-content gtaFW-right-sidebar"
+  "gtaFW-page-footer  gtaFW-page-footer  gtaFW-page-footer";
+
+}
+
+.pagegrid-fullwidth-header { grid-area: gtaFW-page-header;
+  padding-bottom: 20px;
+}
+
+.pagegrid-fullwidth-left-sidebar { grid-area: gtaFW-left-sidebar;
+}
+
+/* Custom Element for readability. Set to display: block to equal <div>
+    (not so necessary on home page but vital on many pages */
+fullwidth-page-content {
+  display: block;
+}
+.pagegrid-fullwidth-page-content { grid-area: gtaFW-page-content;
+  background-color: var(--Boxed-Content-Background);
+  margin-left: 30px;
+  padding-left: 30px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.pagegrid-fullwidth-right-sidebar { grid-area: gtaFW-right-sidebar;
+}
+
+.pagegrid-fullwidth-footer { grid-area: gtaFW-page-footer;
+  background-color: var(--Salmon);
+  border-bottom: 2px solid whitesmoke;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+/* ======================================================================= */
+/* SERIES TABLE OF CONTENT PAGE */
+/* Default Layout is 2 Columns */
+
+.css-pagegrid-series-toc {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+  "gtaSTOC-page-header  gtaSTOC-page-header"
+  "gtaSTOC-page-content gtaSTOC-right-sidebar"
+  "gtaSTOC-page-footer  gtaSTOC-page-footer";
+}
+
+.pagegrid-series-toc-header { grid-area: gtaSTOC-page-header;
+  padding-bottom: 20px;
+}
+
+/* Custom Element for readability. Set to display: block to equal <div>
+    (not so necessary on home page but vital on many pages */
+series-toc-page-content {
+  display: block;
+}
+.pagegrid-series-toc-page-content { grid-area: gtaSTOC-page-content;
+  background-color: var(--Boxed-Content-Background);
+  margin-left: 30px;
+  padding-left: 30px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.pagegrid-series-toc-right-sidebar { grid-area: gtaSTOC-right-sidebar;
+  background-color: var(--Boxed-Content-Background);
+  margin-left: 20px;
+  margin-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+.pagegrid-series-toc-footer { grid-area: gtaSTOC-page-footer;
+  background-color: var(--Salmon);
+  border-bottom: 2px solid whitesmoke;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
