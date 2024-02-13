@@ -1,0 +1,49 @@
+
+<!-- * Breadcrumb Level 01 -->
+{{ if (eq .Params.BreadcrumbPageLevel "xxx-1") }}
+    <div class="navby-url-breadcrumbs">
+        <span class="navby-url-breadcrumbs-currentpage">{{ .Params.BreadcrumbHomePage }}</span>
+    </div>
+{{ end }}
+
+
+<!-- * Breadcrumb Level 02 -->
+{{ if (eq .Params.BreadcrumbPageLevel "2") }}
+    <div class="navby-url-breadcrumbs">
+        <ul>
+            <li class="prior-page-name"><a href="/">{{ .Params.BreadcrumbHomePage }}</a></li>
+            <li class="url-separator">&nbsp;»&nbsp;</li>
+            <li class="navby-url-breadcrumbs-currentpage"> {{ .Params.BreadcrumbThisPage }} </li>
+        </ul>
+    </div>
+{{ end }}
+
+
+<!-- * Breadcrumb Level 03 -->
+{{ if (eq .Params.BreadcrumbPageLevel "3") }}
+    <div class="navby-url-breadcrumbs">
+        <ul>
+            <li class="prior-page-name"><a href="/">{{ .Params.BreadcrumbHomePage }}</a></li>
+            <li class="url-separator">&nbsp;»&nbsp;</li>
+            <li class="prior-page-name"><a href="/{{ .Params.BreadcrumbParentDir }}"> {{ .Params.BreadcrumbParentPage }} </a></li>
+            <li class="url-separator">&nbsp;»&nbsp;</li>
+            <li class="navby-url-breadcrumbs-currentpage"> {{ .Params.BreadcrumbThisPage }} </li>
+        </ul>
+    </div>
+{{ end }}
+
+
+<!-- * BC Level 04 -->
+{{ if (eq .Params.BreadcrumbPageLevel "4") }}
+    <div class="navby-url-breadcrumbs">
+        <ul>
+            <li class="prior-page-name"><a href="/">{{ .Params.BreadcrumbHomePage }}</a></li>
+            <li class="url-separator">&nbsp;»&nbsp;</li>
+            <li class="prior-page-name"><a href="/{{ .Params.BreadcrumbGrandParentDir }}"> {{ .Params.BreadcrumbGrandParentPage }} </a></li>
+            <li class="url-separator">&nbsp;»&nbsp;</li>
+            <li class="prior-page-name"><a href="/{{ .Params.BreadcrumbGrandParentDir }}/{{ .Params.BreadcrumbParentDir }}"> {{ .Params.BreadcrumbParentPage }} </a></li>
+            <li class="url-separator">&nbsp;»&nbsp;</li>
+            <li class="navby-url-breadcrumbs-currentpage"> {{ .Params.BreadcrumbThisPage }} </li>
+        </ul>
+    </div>
+{{ end }}

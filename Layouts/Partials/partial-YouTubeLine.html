@@ -1,0 +1,12 @@
+
+{{ if (eq .Params.mdYouTube_numofVideos "1") }}
+    <a href="{{ .Params.mdYouTubeV1Link }}" target="_blank" rel="noreferrer noopener"><i class="fa fa-youtube-play youtube-logo"></i></a>
+    <span class="youtube-text"><a href="{{ .Params.mdYouTubeV1Link }}" target="_blank" rel="noreferrer noopener"><strong>{{ .Params.mdYouTubeV1Name }}</strong></a></span>
+{{ end }}
+
+{{ if (eq .Params.mdYouTube_numofVideos "2") }}
+    <a href="{{ .Params.mdYouTubeV1Link }}" target="_blank" rel="noreferrer noopener"><i class="fa fa-youtube-play youtube-logo"></i></a>
+    <span class="youtube-text"><a href="{{ .Params.mdYouTubeV1Link }}" target="_blank" rel="noreferrer noopener"><strong>{{ .Params.mdYouTubeV1Name }}</strong></a></span>
+    <a href="{{ .Params.mdYouTubeV2Link }}" target="_blank" rel="noreferrer noopener"><i class="fa fa-youtube-play youtube-logo"></i></a>
+    <span class="youtube-text"><a href="{{ .Params.mdYouTubeV2Link }}" target="_blank" rel="noreferrer noopener"><strong>{{ .Params.mdYouTubeV2Name }}</strong></a></span>
+{{ end }}

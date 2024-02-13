@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+    {{ partial "partial-HTMLtag-head.html" . }}
+
+</head>
+
+<!-- <body>-->
+{{ partial "partial-HTMLtag-body.html" . }}
+
+  <main class="css-pagegrid-fullwidth">
+
+    <header class="pagegrid-fullwidth-header">
+      {{ partial "partial-HOAB-SiteHeader.html" . }}
+    </header>
+
+    <section class="pagegrid-fullwidth-left-sidebar"><p>&nbsp;</p></section>
+
+    <fullwidth-page-content class="pagegrid-fullwidth-page-content  boxed-gold-border">
+      
+      {{ partial "partial-Breadcrumbs-Navby-URL.html" . }}
+
+      <h2 class="pagename-Gelasio-Green">{{ .Params.mdThisPage_Name }}</h2>
+
+      <raised-content-box class="rcb-shadow-lower-right">
+
+        <div class="default-paragraph-text">
+          In this series, we present “Zen” Stories. The book Zen Flesh, Zen Bones – compiled by 
+          Paul Reps – is the source of the majority of these stories, some of which are reproduced here. 
+          Many are also repeated, sometimes in altered form, far and wide across the internet.
+        </div>
+
+        <div class="default-paragraph-text">
+          What makes a story Zen? Who can say? Indeed, saying you understand a Zen story 
+          is to misunderstand the point of them. For even if by some measurable standard you actually 
+          arrive at the meaning the author intended to convey, you are still nowhere.
+        </div>
+
+        <div class="default-paragraph-text">
+          No, no, no, no mon ami. Whether a story is truly “Zen” or not, this much is certain. 
+          You need to bathe in such a story. Float on top of it, then dive underneath it. 
+          You must swim around in it. Luxuriate in its silkiness or skate over its diamond-like hardness. 
+          Be engulfed in its waves as they crash over you and then bring yourself up and out 
+          into the sunlight and warm summer air. 
+          Or you may need to sink down into the depths of your being; never to return to the surface 
+          unaltered. Strange new worlds indeed.
+        </div>
+
+        <div class="spacer-2rem"></div>
+
+        <div class="TOC-Flexbox-Multi-Columns">
+          <div class="TOC-Column-Title-and-Posts">
+            <h2>From Zen Flesh, Zen Bones</h2>
+            <ul>
+              <li><a href="./A-Cup-of-Tea/index.html">A Cup of Tea</a></li>
+              <li><a href="./Happy-Chinaman/index.html">Happy Chinaman</a></li>
+            </ul>
+          </div>
+          <div class="TOC-Column-Title-and-Posts">
+            <h2>From The Heart of the Universe</h2>
+            <ul>
+              <li><a href="./GQ-Posts/Introduction-C16-V2/index.html">All Done</a></li>
+              <li><a href="./GQ-Posts/Harmlessness/index.html">No Stairway to Heaven</a></li>
+              <li><a href="./GQ-Posts/Truth/index.html">Selling Everything You Have</a></li>
+              <li><a href="./GQ-Posts/Introduction-C16-V2/index.html">The Best Zen Story Ever</a></li>
+              <li><a href="./GQ-Posts/Harmlessness/index.html">The Hour is Past</a></li>
+              <li><a href="./GQ-Posts/Truth/index.html">Useless Questions</a></li>
+            </ul>
+          </div>
+          <div class="TOC-Column-Title-and-Posts">
+            <h2>Other Zen Stories</h2>
+            <ul>
+              <li><a href="./GQ-Posts/Introduction-C16-V3/index.html">Just a Glance</a></li>
+              <li><a href="./GQ-Posts/Energy/index.html">In The Heart</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </raised-content-box>
+
+    </fullwidth-page-content>
+    
+    <section class="pagegrid-fullwidth-right-sidebar">&nbsp;</section>
+    
+    <footer class="pagegrid-fullwidth-footer">
+      {{ partial "partial-HOAB-SiteFooter.html" . }}
+    </footer>
+
+  </main>
+
+
+  {{ .Scratch.Set "arg1" "Layouts >> Pages-Unique-Layouts >> Page-FTE-Zen-Stories.html" }}
+  {{ partial "partial-HOAB-Content-Debug.html" . }}
+
+</body>
+
+</html>

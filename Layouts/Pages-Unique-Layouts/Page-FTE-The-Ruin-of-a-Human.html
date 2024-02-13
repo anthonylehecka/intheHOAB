@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+    {{ partial "partial-HTMLtag-head.html" . }}
+
+</head>
+
+<!-- <body>-->
+{{ partial "partial-HTMLtag-body.html" . }}
+
+  <main class="css-pagegrid-fullwidth">
+
+    <header class="pagegrid-fullwidth-header">
+      {{ partial "partial-HOAB-SiteHeader.html" . }}
+    </header>
+
+    <section class="pagegrid-fullwidth-left-sidebar"><p>&nbsp;</p></section>
+
+    <fullwidth-page-content class="pagegrid-fullwidth-page-content  boxed-gold-border">
+
+      {{ partial "partial-Breadcrumbs-Navby-URL.html" . }}
+
+      <h2 class="pagename-Gelasio-Green">{{ .Params.mdThisPage_Name }}</h2>
+
+      <raised-content-box class="rcb-shadow-lower-right">
+        <div class="default-paragraph-text">
+          In this series, we present verses sixty two and sixty three of chapter two of the Bhagavad Gita
+        </div>
+
+        <div class="spacer-2rem"></div>
+
+        <div class="TOC-Flexbox-Multi-Columns">
+          <div class="TOC-Column-Title-and-Posts">
+            <h2>Chapter 2</h2>
+            <ul>
+              <li><a href="#">Introduction</a></li>
+              <li><a href="#">Verses</a></li>
+            </ul>
+          </div>
+          <div class="TOC-Column-Title-and-Posts">
+            <h2>Chapter 2 Verse 62</h2>
+            <ul>
+              <li><a href="#">Introduction</a></li>
+              <li><a href="#">Verse</a></li>
+            </ul>
+          </div>
+          <div class="TOC-Column-Title-and-Posts">
+            <h2>Chapter 2 Verse 63</h2>
+            <ul>
+              <li><a href="#">Introduction</a></li>
+              <li><a href="#">Verse</a></li>
+            </ul>
+          </div>
+        </div>
+      </raised-content-box>
+
+    </fullwidth-page-content>
+  
+    <section class="pagegrid-fullwidth-right-sidebar"><p>&nbsp;</p></section>
+  
+    <footer class="pagegrid-fullwidth-footer">
+      {{ partial "partial-HOAB-SiteFooter.html" . }}
+    </footer>
+
+  </main>
+
+
+
+  {{ .Scratch.Set "arg1" "Layouts >> Pages-Unique-Layouts >> Page-FTE-The-Ruin-of-a-Human.html" }}
+  {{ partial "partial-HOAB-Content-Debug.html" . }}
+
+</body>
+
+</html>

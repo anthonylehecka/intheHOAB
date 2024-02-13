@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+    {{ partial "partial-HTMLtag-head.html" . }}
+
+</head>
+
+<!-- <body>-->
+{{ partial "partial-HTMLtag-body.html" . }}
+
+  <main class="css-pagegrid-fullwidth">
+
+    <header class="pagegrid-fullwidth-header">
+      {{ partial "partial-HOAB-SiteHeader.html" . }}
+    </header>
+
+    <section class="pagegrid-fullwidth-left-sidebar"><p>&nbsp;</p></section>
+
+    <fullwidth-page-content class="pagegrid-fullwidth-page-content  boxed-gold-border">
+    
+      {{ partial "partial-Breadcrumbs-Navby-URL.html" . }}
+
+      <h2 class="pagename-Gelasio-Green">{{ .Params.mdThisPage_Name }}</h2>
+
+      <raised-content-box class="rcb-shadow-lower-right">
+
+        <div class="default-paragraph-text">
+          In this series,
+        </div>
+        <div class="default-paragraph-text">
+          Paragraph 2
+        </div>
+
+        <div class="spacer-2rem"></div>
+
+        <div class="TOC-Flexbox-Multi-Columns">
+          <div class="TOC-Column-Title-and-Posts">
+            <h2>History</h2>
+            <ul>
+              <li><a href="./GQ-Posts/Introduction-C16-V1/index.html">History Post 01</a></li>
+              <li><a href="./GQ-Posts/Fearlessness/index.html">History Post 02</a></li>
+
+            </ul>
+          </div>
+          <div class="TOC-Column-Title-and-Posts">
+            <h2>Sayings</h2>
+            <ul>
+              <li><a href="./GQ-Posts/Introduction-C16-V2/index.html">Sayings Post 01</a></li>
+              <li><a href="./GQ-Posts/Harmlessness/index.html">Sayings Post 02</a></li>
+              <li><a href="./GQ-Posts/Truth/index.html">Sayings Post 03</a></li>
+            </ul>
+          </div>
+          <div class="TOC-Column-Title-and-Posts">
+            <h2>Stories</h2>
+            <ul>
+              <li><a href="./GQ-Posts/Introduction-C16-V3/index.html">Stories Post 01</a></li>
+              <li><a href="./GQ-Posts/Energy/index.html">Stories Post 02</a></li>
+            </ul>
+          </div>
+        </div>
+      </raised-content-box>
+
+    </fullwidth-page-content>
+  
+    <section class="pagegrid-fullwidth-right-sidebar"><p>&nbsp;</p></section>
+  
+    <footer class="pagegrid-fullwidth-footer">
+      {{ partial "partial-HOAB-SiteFooter.html" . }}
+    </footer>
+
+</main>
+
+
+  {{ .Scratch.Set "arg1" "Layouts >> Pages-Unique-Layouts >> Page-FTW-The-Desert-Fathers.html" }}
+  {{ partial "partial-HOAB-Content-Debug.html" . }}
+
+</body>
+
+</html>

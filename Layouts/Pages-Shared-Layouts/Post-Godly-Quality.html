@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  {{ partial "partial-HTMLtag-head.html" . }}
+
+  <style>
+    .gqpost-table {
+      border-collapse: collapse;
+    }
+  
+    .gqpost-table td {
+      width: 50%;
+    }
+  
+    #j99-img {
+      border: 2px solid var(--Border-Gold);
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  </style>
+
+</head>
+
+<!-- <body>-->
+{{ partial "partial-HTMLtag-body.html" . }}
+
+  <main class="css-pagegrid-fullwidth">
+
+    <section class="pagegrid-fullwidth-header">
+      {{ partial "partial-HOAB-SiteHeader.html" . }}
+    </section>
+
+    <section class="pagegrid-fullwidth-left-sidebar"><p>&nbsp;</p></section>
+
+    <fullwidth-page-content class="pagegrid-fullwidth-page-content">
+
+
+      {{ $callthispartial := .Params.bodyContentPartial }}
+      <section class="breadcrumb-line-flex-container">
+
+        <div class="breadcrumb-line-flex-left">
+          {{ with (eq $callthispartial "partial-Poet-Dante.html") }}
+            {{ partial "partial-Breadcrumbs-Navby-URL.html" . }}
+          {{ end }}
+        </div>
+        <div class="breadcrumb-line-flex-right">
+          {{ partial "partial-Breadcrumbs-GQ-Posts.html" . }}
+          <div class="youtube-line">
+            {{ partial "partial-YouTubeLine.html" . }}
+          </div>
+        </div>
+
+      </section>
+
+      {{ $callthispartial := .Params.bodyContentPartial }}
+
+      {{ with (eq $callthispartial "GodlyQuality/partial-P01-Fearlessness.html") }}
+        {{ partial "GodlyQuality/partial-P01-Fearlessness.html" . }}
+      {{ end }}
+
+      <br><br>
+
+    </fullwidth-page-content>
+
+    <section class="pagegrid-fullwidth-right-sidebar">&nbsp;</section>
+
+    <footer class="pagegrid-fullwidth-footer">
+
+      {{ partial "partial-HOAB-SiteFooter.html" . }}
+
+    </footer>
+
+
+
+  </main>
+
+
+  {{ .Scratch.Set "arg1" "Layouts >> Pages-Shared-Layouts >> Post-Godly-Quality.html" }}
+  {{ partial "partial-HOAB-Content-Debug.html" . }}
+
+
+</body>
+</html>

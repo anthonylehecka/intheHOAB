@@ -1,0 +1,266 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  {{ partial "partial-HTMLtag-head.html" . }}
+
+<style>
+
+/* ========================================================================= */
+
+.hoab-typog-headers {
+  border: 1px solid var(--Border-Gold);
+  border-collapse: collapse;
+}
+.hoab-typog-headers h1 {
+margin-bottom: 0px;
+}
+
+.hoab-typog-textblocks {
+  border-collapse: collapse;
+}
+
+.html-tag-th {
+  background-color: var(--Boxed-Content-Background);
+  border: 1px solid var(--Border-Gold);
+  /* padding: 3px 6px 3px 8px; */
+  vertical-align: bottom;
+}
+
+.html-tag-td {
+  border: 1px solid var(--Border-Gold);
+  padding: 6px 6px 6px 10px;
+  vertical-align: top;
+}
+.k99-css-code {
+  background-color: whitesmoke;
+  font-family: "Envy Code R", monospace, serif;
+  font-size: 1.3rem;
+  text-shadow: 0.5px 0.5px 0.5px var(--Border-Gold);  /* offset-x | offset-y | blur-radius | color */
+}
+
+/* This is the "th" row */
+.k99-color-bisque {
+  background-color: bisque;
+  padding: 6px 0px 6px 8px;
+}
+.k99-color-boxed-content-background {
+  background-color: var(--Boxed-Content-Background);
+}
+
+
+/* HTMLtable.com */
+.html-tag-table  { display: table; }               /* <table> */
+.html-tag-thead  { display: table-header-group;}   /* <thead> */
+.html-tag-th     { display: table-cell;}           /* <th>    */
+.html-tag-tbody  { display: table-row-group;}      /* <tbody> */
+.html-tag-tr     { display: table-row; }           /* <tr>    */
+.html-tag-td     { display: table-cell;}           /* <td>    */
+.html-tag-tfoot  { display: table-footer-group;}   /* <tfoot> */
+
+</style>
+
+</head>
+
+<!-- <body>-->
+{{ partial "partial-HTMLtag-body.html" . }}
+
+  <main class="css-pagegrid-fullwidth">
+
+    <header class="pagegrid-fullwidth-header">
+      {{ partial "partial-HOAB-SiteHeader.html" . }}
+    </header>
+
+    <section class="pagegrid-fullwidth-left-sidebar"><p>&nbsp;</p></section>
+
+    <fullwidth-page-content class="pagegrid-fullwidth-page-content  boxed-gold-border">
+      
+      {{ partial "partial-Breadcrumbs-Navby-URL.html" . }}
+
+      <h2 class="pagename-Gelasio-Green">{{ .Params.mdThisPage_Name }}</h2>
+
+      <raised-content-box class="rcb-shadow-lower-right">
+
+        <div class="default-paragraph-text">
+          On this page are shown the styles and typography of this site.<br>
+        </div>
+
+        <!-- * Headers * -->
+        <table class="hoab-typog-headers">
+          <thead class="html-tag-thead">
+            <tr class="html-tag-tr">
+              <th class="html-tag-th"><h1>This is H1</h1></th>
+              <th class="html-tag-th"><h2>This is H2</h2></th>
+              <th class="html-tag-th"><h3>This is H3</h3></th>
+              <th class="html-tag-th">
+                <h4 style="display: inline">This is H4</h4>&nbsp;&nbsp;&nbsp;
+                <h5 style="display: inline">H5</h5>&nbsp;&nbsp;&nbsp;
+                <h6 style="display: inline">H6</h6>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="html-tag-tbody">
+            <tr class="html-tag-tr">
+              <td class="html-tag-td  k99-css-code">
+                color: var(--Header-H1-Red);<br>
+                font-family: "Cabin Condensed", sans-serif;<br>
+                margin-bottom: 20px;
+              </td>
+              <td class="html-tag-td  k99-css-code">
+                color: var(--Header-H2-Red);<br>
+                font-family: "Cabin Condensed", sans-serif;<br>
+                <hr>
+                h2.pagename-Gelasio-Green<br>
+                color: var(--Gelasio-Green);<br>
+                font-family: "Gelasio", serif;<br>
+                font-size: 3rem;<br>
+                font-weight: normal;<br>
+                text-decoration: underline;
+              </td>
+              <td class="html-tag-td  k99-css-code">
+                color: var(--Header-H3-Red);<br>
+                font-family: "Cabin Condensed", sans-serif;
+              </td>
+              <td class="html-tag-td  k99-css-code">
+                color: var(--Header-H4-Red);<br>
+                font-family: "Cabin Condensed", sans-serif;<br>
+                <hr>
+                color: var(--Header-H5-Red);<br>
+                font-family: "Cabin Condensed", sans-serif;<br>
+                <hr>
+                color: var(--Header-H6-Red);<br>
+                font-family: "Cabin Condensed", sans-serif;
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+
+        <!-- * Paragraphs and Text Blocks * -->
+        <table class="hoab-typog-textblocks">
+
+          <!-- * Default Paragraph Text * -->
+          <tr class="html-tag-tr">
+            <td class="html-tag-th  k99-color-bisque" style="width:40%"><b>Paragraphs &amp; Text Blocks</b></td>
+            <td class="html-tag-th  k99-color-bisque"><b>Examples</b></td>
+          </tr>
+          <tr class="html-tag-tr">
+            <td class="html-tag-td  k99-css-code">
+              .default-paragraph-text {<br>
+                color: var(--Default-Body-Text);<br>
+                margin-top: 10px;<br>
+                margin-bottom: 10px;
+            </td>
+            <td class="html-tag-td">
+              <span class="default-paragraph-text  k99-color-boxed-content-background">
+                In this series, we present the first three verses of Chapter 16 of the Bhagavad Gita. 
+                The entire chapter is sometimes called “Spirituality and Materialism”, with the first 
+                three verses giving a list of spiritual or “Godly” qualities. 
+                It is interesting to note that while these qualities are called “Godly”, 
+                they are in fact very familiar to each of us and indeed, are the qualities that make us human. 
+                Later in the chapter, Krishna will go on to list the materialistic or demonic qualities.
+              </span>
+            </td>
+          </tr>
+
+          <tr><td colspan="2">&nbsp;</td></tr>
+
+          <!-- * Bible Quotes * -->
+          <tr class="html-tag-tr">
+            <td class="html-tag-th  k99-color-bisque"><b>Bible Quotes</b></td>
+            <td class="html-tag-th  k99-color-bisque"><b>Examples</b></td>
+          </tr>
+          <tr class="html-tag-tr">
+            <td class="html-tag-td  k99-css-code">
+              .bible-quote-text {<br>
+              color: var(--Bible-Text);<br>
+              text-shadow: 0.5px 0.5px 1px #B0B0B0<br> /* offset-x | offset-y | blur-radius | color */<br>
+              }
+            </td>
+            <td class="html-tag-td  k99-color-boxed-content-background">
+              <span class="bible-quote-text">
+                My sheep hear my voice, and I know them, and they follow me:
+                And I give unto them eternal life; and they shall never perish,
+                neither shall any man pluck them out of my hand.
+              </span>
+            </td>
+          </tr>
+          <tr class="html-tag-tr">
+            <td class="html-tag-td  k99-css-code">
+              .bible-quote-source {<br>
+                color: var(--Bible-Source);<br>
+                margin: 8px 0px 8px 0px;<br>
+                text-shadow: 1px 1px 2px var(--Quote-Source-Shadow);<br>
+              }
+            </td>
+            <td class="html-tag-td  k99-color-boxed-content-background">
+              <span class="bible-quote-source">
+                John 10:27-30 (King James Version)
+              </span>
+            </td>
+          </tr>
+
+          <tr><td colspan="2">&nbsp;</td></tr>
+
+          <!-- * General Quotes * -->
+
+          <tr class="html-tag-tr">
+            <td class="html-tag-th  k99-color-bisque"><b>General Quotes</b></td>
+            <td class="html-tag-th  k99-color-bisque"><b>Examples</b></td>
+          </tr>
+
+          <tr class="html-tag-tr">
+            <td class="html-tag-td  k99-css-code">
+              .standard-quote-text {<br>
+                color: var(--Quote-Text);<br>
+                font-style: italic;<br>
+                margin: 0;<br>
+                margin-top: 10px;<br>
+                text-align: center;<br>
+              }
+            </td>
+            <td class="html-tag-td  k99-color-boxed-content-background">
+              <span class="standard-quote-text">
+                God made sense turn outward, man therefore looks outward, not into himself.<br>
+                Now and again a daring soul, desiring immortality, has looked back and found himself.
+              </span>
+            </td>
+          </tr>
+          <tr class="html-tag-tr">
+            <td class="html-tag-td  k99-css-code">
+              .standard-quote-source {<br>
+                color: var(--Quote-Source);<br>
+                text-align: center;<br>
+                text-shadow: 1px 1px 2px var(--Quote-Source-Shadow);<br>/* offset-x | offset-y | blur-radius | color */<br>
+                margin: 8px 15px 0px 15px;<br>
+              }
+            </td>
+            <td class="html-tag-td  k99-color-boxed-content-background">
+              <span class="standard-quote-source">
+                Katha Upanishad 2.1.1
+              </span>
+            </td>
+          </tr>
+
+        </table>
+        <br>
+      </raised-content-box>
+
+    </fullwidth-page-content>
+  
+    <section class="pagegrid-fullwidth-right-sidebar"><p>&nbsp;</p></section>
+  
+    <footer class="pagegrid-fullwidth-footer">
+      {{ partial "partial-HOAB-SiteFooter.html" . }}
+    </footer>
+
+  </main>
+
+
+  {{ .Scratch.Set "arg1" "Layouts >> Pages-Unique-Layouts >> Page-About-Typography.html" }}
+  {{ partial "partial-HOAB-Content-Debug.html" . }}
+
+</body>
+
+</html>

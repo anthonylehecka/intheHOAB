@@ -1,0 +1,208 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+    {{ partial "partial-HTMLtag-head.html" . }}
+
+  <!-- Two Column Audio Readings -->
+  <style>
+
+    audio {
+      max-height: 100%;
+      max-width: 100%;
+      margin: auto;
+      object-fit: contain;
+    }
+
+    /* container */
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+    }
+    .flex-left {
+      width: 66%;
+    }
+    .flex-right {
+      width: 34%;
+    }
+
+    .OuterBox-Audio-Green {
+      background-color: var(--Audio-Green);
+      padding: 24px 24px 24px 24px; /* Top - Right - Bottom - Left */
+      margin-bottom: 24px;
+    }
+    .Audio-Green {
+      background-color: var(--Audio-Green);
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+    .OuterBox-Audio-Orange {
+      background-color: var(--Audio-Orange);
+      padding: 24px 24px 24px 24px; /* Top - Right - Bottom - Left */
+      margin-bottom: 24px;
+    }
+    .Audio-Orange {
+      background-color: var(--Audio-Orange);
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+    .Audio-left-border {
+      border-left: 2px solid var(--Brick);
+    }
+
+  </style>
+
+</head>
+
+<!-- <body>-->
+{{ partial "partial-HTMLtag-body.html" . }}
+
+  <main class="css-pagegrid-fullwidth">
+
+    <header class="pagegrid-fullwidth-header">
+      {{ partial "partial-HOAB-SiteHeader.html" . }}
+    </header>
+
+    <section class="pagegrid-fullwidth-left-sidebar"><p>&nbsp;</p></section>
+
+    <fullwidth-page-content class="pagegrid-fullwidth-page-content  boxed-gold-border">
+
+      <section class="breadcrumb-line-flex-container">
+        <div class="breadcrumb-line-flex-left">
+          {{ partial "partial-Breadcrumbs-Navby-URL.html" . }}
+        </div>
+        <div class="breadcrumb-line-flex-right">
+          <div class="navby-prev-next-post-breadcrumbs">
+          <ul>
+          <li><a href="../Preface">Preface</a></li>
+          <li class="post-separator">&nbsp;«&nbsp;</li>
+          <li class="thispage-gq-name">Chandausi</li>
+          <li class="post-separator">&nbsp;»&nbsp;</li>
+          <li><a href="../Moradabad">Moradabad</a></li>
+          </ul>
+          </div>
+        </div>
+      </section>
+
+      <h2 class="pagename-Gelasio-Green">{{ .Params.mdThisPage_Name }}</h2>
+
+      <raised-content-box class="rcb-shadow-upper-left">
+
+        <div class="default-paragraph-text">
+          These readings are from “The Heart of Eastern Mystical Teaching” by Hari Prasad Shastri (1882-1956). 
+          Shri Dadaji of Aligarh (1854-1910) was a modern day saint of India. 
+          While he kept no formal ashram, many, including Hari Prasad Shastri considered him their spiritual master.
+        </div>
+
+        <div class="spacer-2rem"></div>
+
+        <!-- =====  Reading 1 ===== -->
+        <div class="OuterBox-Audio-Green">
+          <div class="flex-container">
+            <div class="flex-left Audio-Green Audio-left-border">
+              Reading 1:  In this reading the father of Shri Dada, Pundit Behari Lalji, 
+              having lost his worldly possessions, visits his son seeking help. 
+              The response of Shri Dada to his father (who had disavowed him after Shri Dada 
+              took up a religious life instead of entering into the family business) 
+              is a lesson in charity and forgiveness as is the response of his wife who 
+              offers her future financial security to her father-in-law.
+            </div>
+            <div class="flex-right Audio-Green">
+              <audio controls>
+                <source src="/audio/HOEMT-Reading-001.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio><figcaption>Chandausi pp. 19-22. Audio: 5:51</figcaption>
+            </div>
+          </div>
+        </div>
+
+        <!-- =====  Reading 2 ===== -->
+        <div class="OuterBox-Audio-Orange">
+          <div class="flex-container">
+            <div class="flex-left Audio-Orange Audio-left-border">
+              Reading 2: In this reading, a group of traveling Udasi Sadhus seek to celebrate 
+              the day of the passing of their guru according to tradition.
+            </div>
+            <div class="flex-right Audio-Orange">
+              <audio controls>
+                <source src="/audio/HOEMT-Reading-002.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio><figcaption>Chandausi pp. 23-25. Audio: 4:19</figcaption>
+            </div>
+          </div>
+        </div>
+
+        <!-- =====  Reading 3 ===== -->
+        <div class="OuterBox-Audio-Green">
+          <div class="flex-container">
+            <div class="flex-left Audio-Green Audio-left-border">
+              Reading 3: In this reading from 1896, Shri Dada speaks at the temple of Rustogis 
+              in Chandausi on the occasion of the annual festival of Raksha-Bandhan, 
+              the ceremony of “binding the protection thread”.
+            </div>
+            <div class="flex-right Audio-Green">
+              <audio controls>
+                <source src="/audio/HOEMT-Reading-003.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio><figcaption>Chandausi pp. 31-33. Audio:  3:42</figcaption>
+            </div>
+          </div>
+        </div>
+
+        <!-- =====  Reading 4 ===== -->
+        <div class="OuterBox-Audio-Orange">
+          <div class="flex-container">
+            <div class="flex-left Audio-Orange Audio-left-border">
+              Reading 4: In this reading Shri Dada addresses his disciples and a young visitor, 
+              who has been asked by his father’s guru to become acquainted with the Holy Man and his teachings.
+            </div>
+            <div class="flex-right Audio-Orange">
+              <audio controls>
+                <source src="/audio/HOEMT-Reading-004.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio><figcaption>Chandausi pp. 48-50. Audio 5:41</figcaption>
+            </div>
+          </div>
+        </div>
+
+        <!-- =====  Reading 5 ===== -->
+        <div class="OuterBox-Audio-Green">
+          <div class="flex-container">
+            <div class="flex-left Audio-Green Audio-left-border">
+              Reading 5: The marriage of Bullu and Teerath Mal. Words of advice to them from Shri Dada.
+            </div>
+            <div class="flex-right Audio-Green">
+              <audio controls>
+                <source src="/audio/HOEMT-Reading-005.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio><figcaption>Chandausi pp. 62-63. Audio:  2:44</figcaption>
+            </div>
+          </div>
+        </div>
+
+      </raised-content-box>
+
+    </fullwidth-page-content>
+  
+    <section class="pagegrid-fullwidth-right-sidebar"><p>&nbsp;</p></section>
+  
+    <footer class="pagegrid-fullwidth-footer">
+      {{ partial "partial-HOAB-SiteFooter.html" . }}
+    </footer>
+
+</main>
+
+
+  {{ .Scratch.Set "arg1" "Layouts >> Posts-HEMT-Readings >> post-HEMT-Chandausi.html" }}
+  {{ partial "partial-HOAB-Content-Debug.html" . }}
+
+</body>
+
+</html>

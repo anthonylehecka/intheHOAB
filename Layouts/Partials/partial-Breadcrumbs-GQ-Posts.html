@@ -1,0 +1,18 @@
+
+<!-- *  * -->
+
+<div class="navby-prev-next-post-breadcrumbs">
+  <ul>
+    {{ if (.Params.PostNav_hasPrev) }}
+      <li><a href="/{{ .Params.BreadcrumbGrandParentDir }}/{{ .Params.BreadcrumbParentDir }}/{{ .Params.PostNav_prevPost_URL }}"> {{ .Params.PostNav_prevPost_Name }} </a></li>
+      <li class="post-separator">&nbsp;«&nbsp;</li>
+      {{ end }}
+
+    <li>{{ .Params.PostNav_thisPost_Name }}</li>
+
+    {{ if (.Params.PostNav_hasNext) }}    
+      <li class="post-separator">&nbsp;»&nbsp;</li>
+      <li><a href="/{{ .Params.BreadcrumbGrandParentDir }}/{{ .Params.BreadcrumbParentDir }}/{{ .Params.PostNav_nextPost_URL }}"> {{ .Params.PostNav_nextPost_Name }} </a></li>
+    {{ end }}
+  </ul>
+</div>

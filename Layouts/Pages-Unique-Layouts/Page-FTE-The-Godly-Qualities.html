@@ -1,0 +1,136 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  {{ partial "partial-HTMLtag-head.html" . }}
+
+  <style>
+
+    #arl-make-videos {
+      color: var(--Gelasio-Green);
+      font-family: "Cabin Condensed", sans-serif;
+      font-size: 2rem;
+      text-decoration: none;
+    }
+      #arl-make-videos:hover {
+      color: var(--Coral);
+    }
+
+  </style>
+
+</head>
+
+<!-- <body>-->
+{{ partial "partial-HTMLtag-body.html" . }}
+
+  <main class="css-pagegrid-fullwidth">
+
+    <header class="pagegrid-fullwidth-header">
+      {{ partial "partial-HOAB-SiteHeader.html" . }}
+    </header>
+
+    <section class="pagegrid-fullwidth-left-sidebar"><p>&nbsp;</p></section>
+
+    <fullwidth-page-content class="pagegrid-fullwidth-page-content  boxed-gold-border">
+      
+      {{ partial "partial-Breadcrumbs-Navby-URL.html" . }}
+
+      <h2 class="pagename-Gelasio-Green">{{ .Params.mdThisPage_Name }}</h2>
+
+      <raised-content-box class="rcb-shadow-lower-right">
+
+        <div class="default-paragraph-text">
+          In this series, we present the first three verses of Chapter 16 of the Bhagavad Gita. 
+          The entire chapter is sometimes called “Spirituality and Materialism”, 
+          with the first three verses giving a list of spiritual or “Godly” qualities. 
+          It is interesting to note that while these qualities are called “Godly”, 
+          they are in fact very familiar to each of us and indeed, are the qualities that make us human. 
+          Later in the chapter, Krishna will go on to list the materialistic or demonic qualities.
+        </div>
+
+        <div class="default-paragraph-text">
+          Alas, the demonic qualities are also familiar to each of us. 
+          It should be noted that those who indulge in the demonic qualities tend to 
+          exhibit less human and more animal-like behavior. 
+          While the animal kingdom is constrained by nature to act within a more 
+          limited set of behaviors – we humans, created in the image of God; 
+          that image which includes not only all the “Godly” qualities mentioned 
+          in this chapter, but also the gift of free will, are under no such constraints. 
+          Thus the choice to act godly or demonically, rests entirely with each of us. 
+          Nothing in the three realms compels any of us to act against our will.
+        </div>
+
+        <div class="spacer-2rem"></div>
+
+        <div class="TOC-Flexbox-Multi-Columns">
+          <div class="TOC-Column-Title-and-Posts">
+            <h2>Chapter 16 Verse 1</h2>
+            <ul>
+              <li><a href="./Introduction-C16-V1/index.html">Chapter 16 Verse 1 Introduction</a></li>
+              <li><a href="./Fearlessness/index.html">Fearlessness</a></li>
+              <li><a href="./Purity-of-Heart/index.html">Purity of Heart</a></li>
+              <li><a href="./Steadfastness-in-Knowledge/index.html">Steadfastness in Knowledge</a></li>
+              <li><a href="./Giving/index.html">Giving</a></li>
+              <li><a href="./Control-of-the-Senses/index.html">Control of the Senses</a></li>
+              <li><a href="./Worship/index.html">Worship</a></li>
+              <li><a href="./TBD/index.html">Study of (one's own) Scriptures</a></li>
+              <li><a href="./TBD/index.html">Austerity</a></li>
+              <li><a href="./TBD/index.html">Uprightness</a></li>
+            </ul>
+          </div>
+          <div class="TOC-Column-Title-and-Posts">
+            <h2>Chapter 16 Verse 2</h2>
+            <ul>
+              <li><a href="./Introduction-C16-V2/index.html">Chapter 16 Verse 2 Introduction</a></li>
+              <li><a href="./Harmlessness/index.html">Harmlessness</a></li>
+              <li><a href="./Truth/index.html">Truth</a></li>
+              <li><a href="#">Absence of Anger</a></li>
+              <li><a href="#">Renunciation</a></li>
+              <li><a href="#">Peace</a></li>
+              <li><a href="#">Absence of Malice</a></li>
+              <li><a href="#">Compassion for All Creatures</a></li>
+              <li><a href="#">Uncovetousness</a></li>
+              <li><a href="#">Gentleness</a></li>
+              <li><a href="#">Modesty</a></li>
+              <li><a href="#">Absence of Fickleness</a></li>
+            </ul>
+          </div>
+          <div class="TOC-Column-Title-and-Posts">
+            <h2>Chapter 16 Verse 3</h2>
+            <ul>
+              <li><a href="./Introduction-C16-V3/index.html">Chapter 16 Verse 3 Introduction</a></li>
+              <li><a href="./Energy/index.html">Energy</a></li>
+              <li><a href="#">Forgiveness</a></li>
+              <li><a href="#">Fortitude</a></li>
+              <li><a href="#">Purity</a></li>
+              <li><a href="#">Absence of Hatred</a></li>
+              <li><a href="#">Absence of Pride</a></li>
+            </ul>
+            <div class="spacer-3rem"></div>
+            <h2>Lessons Learned</h2>
+            <ul>
+              <li><a id="arl-make-videos" href="#">Some thoughts on making these videos</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </raised-content-box>
+
+    </fullwidth-page-content>
+  
+    <section class="pagegrid-fullwidth-right-sidebar"><p>&nbsp;</p></section>
+  
+    <footer class="pagegrid-fullwidth-footer">
+      {{ partial "partial-HOAB-SiteFooter.html" . }}
+    </footer>
+
+  </main>
+
+
+  {{ .Scratch.Set "arg1" "Layouts >> Pages-Unique-Layouts >> Page-FTE-The-Godly-Qualities.html" }}
+  {{ partial "partial-HOAB-Content-Debug.html" . }}
+
+</body>
+
+</html>

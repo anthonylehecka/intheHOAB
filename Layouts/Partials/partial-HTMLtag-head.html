@@ -1,0 +1,40 @@
+
+<!-- * Layouts / Partials / HTMLtag-head.html -->
+
+<!-- ! N.B. that the <head> tag is commented out here and should be active in the calling html file -->
+    
+<!-- < head > -->
+
+    <title>In The Heart of All Beings</title>
+    
+    <meta name="generator" content="Hugo 0.121.1" />
+    <meta charset="utf-8">
+    <meta name="author" content="TheLoneArranger">
+    <meta name="description" content="TBD">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta http-equiv=“Pragma” content=”no-cache”>
+    <meta http-equiv=“Expires” content=”-1″>
+    <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
+
+    <!-- Favicon (Dove Logo) for the Site -->
+    <link rel="shortcut icon" href="/images/favicon-256x256.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- * ToCSS block is from https: //gohugo.io/functions/resources/tocss/#dart-sass -->
+  {{ with resources.Get "sass/styles.scss" }}
+    {{ $opts := dict "transpiler" "dartsass" "targetPath" "css/HOAB-styles.css" }}
+    {{ with . | toCSS $opts }}
+      {{ if hugo.IsDevelopment }}
+          <link rel="stylesheet" href="{{ .RelPermalink }}">
+      {{ else }}
+        {{ with . | minify | fingerprint }}
+          <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+<!-- < / head > -->
+

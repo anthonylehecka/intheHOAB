@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  {{ partial "partial-HTMLtag-head.html" . }}
+
+</head>
+
+<!-- <body>-->
+{{ partial "partial-HTMLtag-body.html" . }}
+
+  <main class="css-pagegrid-fullwidth">
+
+    <section class="pagegrid-fullwidth-header">
+      {{ partial "partial-HOAB-SiteHeader.html" . }}
+    </section>
+
+    <section class="pagegrid-fullwidth-left-sidebar"><p>&nbsp;</p></section>
+
+    <fullwidth-page-content class="pagegrid-fullwidth-page-content">
+
+      <section class="breadcrumb-line-flex-container">
+        <div class="breadcrumb-line-flex-left">
+        {{ partial "partial-Breadcrumbs-Navby-URL.html" . }}
+        </div>
+        <div class="breadcrumb-line-flex-right">
+          <div class="navby-prev-next-post-breadcrumbs">
+            <ul>
+            <li><a href="../Introduction-C16-V1">Verse 1 Introduction</a></li>
+            <li class="post-separator">&nbsp;«&nbsp;</li>
+            <li class="thispage-gq-name">Fearlessness</li>
+            <li class="post-separator">&nbsp;»&nbsp;</li>
+            <li><a href="../Purity-of-Heart">Purity of Heart</a></li>
+            </ul>
+          </div>
+          <div class="youtube-line">
+            {{ partial "partial-YouTubeLine.html" . }}
+          </div>
+
+        </div>
+      </section>
+
+	  
+	  <h1> NOT IN USE </h1>
+
+
+
+      <raised-content-box class="rcb-shadow-upper-left">
+
+        <section class="pc-row">
+
+          <div class="column  left-column">
+
+              <div class="Sanskrit-Block">
+                <div class="Sanskrit-Text">
+                  {{ .Params.Post_Sanskrit_Text }}
+                </div>
+                <div class="Sanskrit-Text-Translation">
+                  {{ .Params.Post_Sanskrit_Translation }}
+                </div>
+              </div>
+              <div class="hero-image-text  k99-text-align-center">
+                <div class="standard-quote-text">
+                  God made sense turn outward, man therefore looks outward,<br>not into himself.<br>
+                  Now and again a daring soul, desiring immortality,<br>has looked back and found himself.<br>
+                </div>
+                <div class="standard-quote-source">
+                  Katha Upanishad 2.1.1
+                </div>
+                <div class="spacer-2rem"> </div><hr> <div class="spacer-3rem"> </div>
+                <div class="default-paragraph-text">
+                  It is perhaps no surprise that Krishna’s recitation of the Godly Qualities begins with fearlessness. For what chance do we have to fly if we refuse to leave our nest? To love if we do not let someone into our heart? To discover who we truly are unless we take that first step?
+                </div>
+                <div class="default-paragraph-text">
+                  While the verses below (from Matthew 25) may convey the same sentiment, let us first look at some modern wisdom on the subject of fearlessness.
+                </div>
+                  <small-content-box>
+                    <div class="default-paragraph-text">
+                      “…the only thing we have to fear is… fear itself — nameless, unreasoning unjustified terror which paralyzes needed efforts to convert retreat into advance.”
+                    </div>
+                    <div class="default-paragraph-text">
+                      “Fear keeps us focused on the past or worried about the future. If we can acknowledge our fear, we can realize that right now we are okay. Right now, today, we are still alive, and our bodies are working marvelously. Our eyes can still see the beautiful sky. Our ears can still hear the voices of our loved ones.”
+                    </div>
+                    <div class="default-paragraph-text">
+                      “You miss 100% of the pitches you don’t swing at“
+                    </div>
+                  </small-content-box>
+              </div>
+
+          </div>
+          <div class="column  right-column">
+
+              <img class="hero-image" src="../images/Fearless-Cliff-Diving-cr.jpg">
+
+          </div>
+
+        </section>
+
+        <br><hr>
+
+      </raised-content-box>
+
+      <br><br>
+
+    </fullwidth-page-content>
+
+    <section class="pagegrid-fullwidth-right-sidebar">&nbsp;</section>
+
+    <footer class="pagegrid-fullwidth-footer">
+      {{ partial "partial-HOAB-SiteFooter.html" . }}
+    </footer>
+
+  </main>
+
+
+  {{ .Scratch.Set "arg1" "Layouts >> Posts-Godly-Qualities >> post-GQ-Fearlessness.html" }}
+  {{ partial "partial-HOAB-Content-Debug.html" . }}
+  https://commons.wikimedia.org/wiki/File:Cliff_jumping_at_Summersville_Lake_-_01.jpg
+
+</body>
+</html>

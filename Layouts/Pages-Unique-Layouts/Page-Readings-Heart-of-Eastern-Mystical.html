@@ -1,0 +1,92 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+    {{ partial "partial-HTMLtag-head.html" . }}
+
+</head>
+
+<!-- <body>-->
+{{ partial "partial-HTMLtag-body.html" . }}
+
+  <main class="css-pagegrid-fullwidth">
+
+    <header class="pagegrid-fullwidth-header">
+      {{ partial "partial-HOAB-SiteHeader.html" . }}
+    </header>
+
+    <section class="pagegrid-fullwidth-left-sidebar"><p>&nbsp;</p></section>
+
+    <fullwidth-page-content class="pagegrid-fullwidth-page-content">
+
+      {{ partial "partial-Breadcrumbs-Navby-URL.html" . }}
+
+      <h2 class="pagename-Gelasio-Green">{{ .Params.mdThisPage_Name }}</h2>
+      
+      <raised-content-box class="rcb-shadow-lower-right">
+
+        <div class="default-paragraph-text">
+          These readings are from “The Heart of Eastern Mystical Teaching” by Hari Prasad Shastri (1882-1956). 
+          Shri Dadaji of Aligarh (1854-1910) was a modern day saint of India. 
+          While he kept no formal ashram, many, including Hari Prasad Shastri considered him their spiritual master.
+        </div>
+
+        <div class="spacer-2rem"></div>
+
+        <div class="TOC-Flexbox-Multi-Columns">
+          <div class="TOC-Column-Title-and-Posts">
+            <h2>Preface</h2>
+            <ul>
+              <li><a href="./Introduction-C16-V1/index.html">Introduction</a></li>
+            </ul>
+          </div>
+          <div class="TOC-Column-Title-and-Posts">
+            <h2>Chandausi</h2>
+            <ul>
+              <li><a href="./Chandausi/index.html">All Readings</a></li>
+              <li><a href="./Harmlessness/index.html">Reading 1</a></li>
+            </ul>
+          </div>
+          <div class="TOC-Column-Title-and-Posts">
+            <h2>Moradabad</h2>
+            <ul>
+              <li><a href="./Introduction-C16-V3/index.html">Introduction</a></li>
+              <li><a href="./Energy/index.html">Parable 1</a></li>
+            </ul>
+          </div>
+          <div class="TOC-Column-Title-and-Posts">
+            <h2>Najibabad</h2>
+            <ul>
+              <li><a href="./Introduction-C16-V3/index.html">Introduction</a></li>
+              <li><a href="./Energy/index.html">Parable 1</a></li>
+            </ul>
+          </div>
+          <div class="TOC-Column-Title-and-Posts">
+            <h2>Hapur</h2>
+            <ul>
+              <li><a href="./Introduction-C16-V3/index.html">Introduction</a></li>
+              <li><a href="./Energy/index.html">Parable 1</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </raised-content-box>
+
+    </fullwidth-page-content>
+  
+    <section class="pagegrid-fullwidth-right-sidebar"><p>&nbsp;</p></section>
+  
+    <footer class="pagegrid-fullwidth-footer">
+      {{ partial "partial-HOAB-SiteFooter.html" . }}
+    </footer>
+
+  </main>
+
+
+  {{ .Scratch.Set "arg1" "Layouts >> Pages-Unique-Layouts >> Page-Readings-Heart-of-Eastern-Mystical.html" }}
+  {{ partial "partial-HOAB-Content-Debug.html" . }}
+
+</body>
+
+</html>

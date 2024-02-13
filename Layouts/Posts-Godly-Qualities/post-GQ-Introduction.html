@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+    {{ partial "partial-HTMLtag-head.html" . }}
+
+</head>
+
+<!-- <body>-->
+{{ partial "partial-HTMLtag-body.html" . }}
+
+  <main class="css-pagegrid-fullwidth">
+
+    <header class="pagegrid-fullwidth-header">
+      {{ partial "partial-HOAB-SiteHeader.html" . }}
+    </header>
+
+    <section class="pagegrid-fullwidth-left-sidebar"><p>&nbsp;</p></section>
+
+      <fullwidth-page-content class="pagegrid-fullwidth-page-content">
+
+          <div class="breadcrumb-line-flex-container">
+              <div class="breadcrumb-line-flex-left">
+                  {{ partial "partial-Breadcrumbs-Navby-URL.html" . }}
+              </div>
+              <div class="breadcrumb-line-flex-right">
+                  <div class="navby-prev-next-post-breadcrumbs">
+                      <ul>
+                          <li class="thispage-gq-name">Introduction</li>
+                          <li class="post-separator">&nbsp;»&nbsp;</li>
+                          <li><a href="../Fearlessness/index.html">Fearlessness</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+
+          <h2 class="pagename-Gelasio-Green">{{ .Params.mdThisPage_Name }}</h2>
+
+          <style>
+          .img-01 {
+              max-width: 90%;
+              height: auto;
+              border: 3px solid #377891
+              }
+
+          .zarow {
+              display: flex;
+          }
+
+          /* Create three equal columns that sits next to each other */
+          .zacolumn {
+              flex: 50%;
+              padding: 5px;
+          }
+          </style>
+
+          <div class="default-paragraph-text">
+              <div class="zarow">
+                  <div class="zacolumn">
+                      <img class="img-01" src="../images/ARL-Insta-001-768x768.png" >
+                  </div>
+                  <div class="zacolumn">
+                      <img class="img-01" src="../images/ARL-Insta-002-768x768.png" >
+                  </div>
+              </div>
+          </div>
+
+      </fullwidth-page-content>
+
+      <section class="pagegrid-fullwidth-right-sidebar"><p>&nbsp;</p></section>
+
+      <footer class="pagegrid-fullwidth-footer">
+          {{ partial "partial-HOAB-SiteFooter.html" . }}
+      </footer>
+
+  </main>
+
+  {{ .Scratch.Set "arg1" "Layouts >> Posts-Godly-Qualities >> post-GQ-Introduction.html" }}
+  {{ partial "partial-HOAB-Content-Debug.html" . }}
+
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+    {{ partial "partial-HTMLtag-head.html" . }}
+
+  <!-- Two Column Audio Readings -->
+  <style>
+
+    /* container */
+    .Index-Columns-Flexbox {
+      width: 100%;
+      display:flex;
+      margin: 0;
+      gap: 12px;
+    }
+    /* columns */
+    .Index-Columns-Flexbox > * {
+      width: 100%;  /* 100% is correct. Let CSS spread it out evenly */
+      padding: 0;
+      margin: 0;
+      margin-left: 10px;
+    }
+
+    .Index-Columns-Alpha-Name ul{
+      margin: 0;
+      padding: 0;
+      line-height: 2.2rem;
+      list-style: none;
+    }
+    .Index-Columns-Alpha-Name ul li {
+      margin: 0;
+      padding: 0;
+    }
+
+    .Index-Columns-Alpha-Name ul li:before {
+       content:"• ";
+       font-size: 2rem;
+    }
+
+    .Index-Columns-Alpha-Name a {
+      color: var(--Breadcrumb);
+        font-family: "Libre Caslon Text", sans-serif;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+    .Index-Columns-Alpha-Name a:hover {
+      color: var(--Breadcrumb-Hover);
+    }
+
+    /* container */
+    .Alphabetical-Columns-Flexbox {
+      width: 90%;
+      display:flex;
+      margin: 0;
+      flex-direction: row;
+      justify-content: flex-start;
+      border-top: 1px solid var(--Honey);
+    }
+    /* columns */
+    .Alphabetical-Columns-Flexbox > h2 {
+      margin-top: 0.5rem;
+    } 
+    .Alphabetical-Columns-Flexbox > ul {
+      padding: 0;
+      margin: 0;
+      margin-top: 1rem;
+      margin-left: 20px;
+    } 
+
+  </style>
+
+</head>
+
+<!-- <body>-->
+{{ partial "partial-HTMLtag-body.html" . }}
+
+  <main class="css-pagegrid-fullwidth">
+
+    <header class="pagegrid-fullwidth-header">
+      {{ partial "partial-HOAB-SiteHeader.html" . }}
+    </header>
+
+    <section class="pagegrid-fullwidth-left-sidebar"><p>&nbsp;</p></section>
+
+    <fullwidth-page-content class="pagegrid-fullwidth-page-content  boxed-gold-border">
+
+      {{ partial "partial-Breadcrumbs-Navby-URL.html" . }}
+
+      <h2 class="pagename-Gelasio-Green">{{ .Params.mdThisPage_Name }}</h2>
+
+      <!-- * BEGIN  Page Content (Raised) Boxed -->
+      <raised-content-box class="rcb-shadow-lower-right">
+
+        <div class="default-paragraph-text">
+          Here we present words that have been used in this site, or referenced in the videos.
+        </div>
+
+        <div class="spacer-3rem"></div>
+
+        <section class="Index-Columns-Flexbox">
+
+          <!-- * 1st Column w/ Letters -->
+          <div class="Index-Columns-Alpha-Name">
+            <div class="Alphabetical-Columns-Flexbox">
+              <h2>A</h2>   <!-- * A  -->
+              <ul>
+                <li><a href="./Absence-of-Anger/index.html">Absence of Anger</a></li>
+                <li><a href="./Absence-of-Malice/index.html">Absence of Malice</a></li>
+                <li><a href="./Austerity/index.html">Austerity</a></li>
+              </ul>
+            </div>
+            <div class="spacer-3rem"></div>
+
+            <div class="Alphabetical-Columns-Flexbox">
+              <h2>C</h2>   <!-- * C  -->
+              <ul>
+                <li><a href="./Compassion-for-All-Beings/index.html">Compassion for All Beings</a></li>
+                <li><a href="./Control-of-the-Senses/index.html">Control of the Senses</a></li>
+              </ul>
+            </div>
+            <div class="spacer-3rem"></div>
+
+            <div class="Alphabetical-Columns-Flexbox">
+              <h2>F</h2>   <!-- * F  -->
+              <ul>
+                <li><a href="./Fearlessness/index.html">Fearlessness</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- * 2nd Column w/ Letters -->
+          <div class="Index-Columns-Alpha-Name">
+            <div class="Alphabetical-Columns-Flexbox">
+              <h2>G</h2>   <!-- * G  -->
+              <ul>
+                <li><a href="./Giving/index.html">Giving</a></li>
+              </ul>
+            </div>
+            <div class="spacer-3rem"></div>
+
+            <div class="Alphabetical-Columns-Flexbox">
+              <h2>H</h2>   <!-- * H  -->
+              <ul>
+                <li><a href="./Harmlessness/index.html">Harmlessnes</a></li>
+              </ul>
+            </div>
+            <div class="spacer-3rem"></div>
+
+            <div class="Alphabetical-Columns-Flexbox">
+              <h2>P</h2>   <!-- * P  -->
+              <ul>
+                <li><a href="./Peace/index.html">Peace</a></li>
+                <li><a href="./Purity-of-Heart/index.html">Purity-of-Heart</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- * 3rd Column w/ Letters -->
+          <div class="Index-Columns-Alpha-Name">
+            <div class="Alphabetical-Columns-Flexbox">
+              <h2>R</h2>   <!-- * R  -->
+              <ul>
+                <li><a href="./Renunciation/index.html">Renunciation</a></li>
+              </ul>
+            </div>
+            <div class="spacer-3rem"></div>
+
+            <div class="Alphabetical-Columns-Flexbox">
+              <h2>S</h2>   <!-- * S  -->
+              <ul>
+                <li><a href="./Steadfastness-in-Knowledge/index.html">Steadfastness in Knowledge</a></li>
+                <li><a href="./Study-of-Scriptures/index.html">Study of Scripture</a></li>
+              </ul>
+            </div>
+            <div class="spacer-3rem"></div>
+
+            <div class="Alphabetical-Columns-Flexbox">
+              <h2>T</h2>   <!-- * T  -->
+              <ul>
+                <li><a href="./Truth/index.html">Truth</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- * 4rd Column w/ Letters (T, U, W) -->
+          <div class="Index-Columns-Alpha-Name">
+            <div class="Alphabetical-Columns-Flexbox">
+              <h2>U</h2>   <!-- * U  -->
+              <ul>
+                <li><a href="./Uncovetousness/index.html">Uncovetousness</a></li>
+                <li><a href="./Uprightness/index.html">Uprightness</a></li>
+              </ul>
+            </div>
+            <div class="spacer-3rem"></div>
+
+            <div class="Alphabetical-Columns-Flexbox">
+              <h2>W</h2>   <!-- * W  -->
+              <ul>
+                <li><a href="./Worship/index.html">Worship</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+        </section>
+
+      </raised-content-box>
+      <!-- * END  Page Content (Raised) Boxed -->
+
+    </fullwidth-page-content>
+  
+    <section class="pagegrid-fullwidth-right-sidebar"><p>&nbsp;</p></section>
+  
+    <footer class="pagegrid-fullwidth-footer">
+      {{ partial "partial-HOAB-SiteFooter.html" . }}
+    </footer>
+
+  </main>
+
+
+  {{ .Scratch.Set "arg1" "Layouts >> Pages-Unique-Layouts >> Page-Reference-Sanskrit-Words.html" }}
+  {{ partial "partial-HOAB-Content-Debug.html" . }}
+
+</body>
+
+</html>

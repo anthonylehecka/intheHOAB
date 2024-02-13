@@ -1,0 +1,109 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+    {{ partial "partial-HTMLtag-head.html" . }}
+
+  <style>
+
+    /* container */
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+    }
+    .flex-left {
+      width: 66%;
+    }
+    .flex-right {
+      width: 34%;
+    }
+
+  </style>
+
+</head>
+
+<!-- <body>-->
+{{ partial "partial-HTMLtag-body.html" . }}
+
+  <main class="css-pagegrid-fullwidth">
+
+    <header class="pagegrid-fullwidth-header">
+      {{ partial "partial-HOAB-SiteHeader.html" . }}
+    </header>
+
+    <section class="pagegrid-fullwidth-left-sidebar"><p>&nbsp;</p></section>
+
+    <fullwidth-page-content class="pagegrid-fullwidth-page-content  boxed-gold-border">
+
+      <section class="breadcrumb-line-flex-container">
+        <div class="breadcrumb-line-flex-left">
+          {{ partial "partial-Breadcrumbs-Navby-URL.html" . }}
+        </div>
+        <div class="breadcrumb-line-flex-right">
+          <div class="navby-prev-next-post-breadcrumbs">
+            <ul>
+            <li><a href="{{ .Params.Post_Previous_Sanskrit_Word_URL }}"> {{ .Params.Post_Previous_Sanskrit_Word }}</a></li>
+            <li class="post-separator">&nbsp;«&nbsp;</li>
+            <li class="thispage-gq-name">{{ .Params.Post_This_Sanskrit_Word }}</li>
+            <li class="post-separator">&nbsp;»&nbsp;</li>
+            <li><a href="{{ .Params.Post_Next_Sanskrit_Word_URL }}"> {{ .Params.Post_Next_Sanskrit_Word }}</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- * BEGIN  Page Content (Raised) Boxed -->
+      <raised-content-box class="rcb-shadow-upper-left">
+
+        <div class="default-paragraph-text">
+          Sanskrit Word
+        </div>
+
+        <div class="Sanskrit-Word-or-Phrase-Translation">
+          {{ .Params.Post_Sanskrit_Word_Translation }}
+        </div>
+
+        <div class="Sanskrit-Word-or-Phrase-Devanagari">
+          {{ .Params.Post_Sanskrit_Word_Text}}
+        </div>
+
+        <div class="Sanskrit-Word-or-Phrase-Pronunciation">
+          {{ .Params.Post_Sanskrit_Word_Pronunciation }}
+        </div>
+
+        <div class="Sanskrit-Word-or-Phrase-Definition">
+          {{ .Params.Post_Sanskrit_Word_Definition }}
+        </div>
+
+        <p>
+          <br><br><hr>
+          {{ .Params.Post_Previous_Sanskrit_Word_URL }} <br>
+          {{ .Params.Post_Previous_Sanskrit_Word }} <br>
+          {{ .Params.Post_This_Sanskrit_Word }} <br>
+          {{ .Params.Post_Next_Sanskrit_Word_URL }} <br>
+          {{ .Params.Post_Next_Sanskrit_Word }} <br>
+          <hr>
+        </p>
+
+      </raised-content-box>
+      <!-- * END  Page Content (Raised) Boxed -->
+
+    </fullwidth-page-content>
+  
+    <section class="pagegrid-fullwidth-right-sidebar"><p>&nbsp;</p></section>
+    
+    <footer class="pagegrid-fullwidth-footer">
+      {{ partial "partial-HOAB-SiteFooter.html" . }}
+    </footer>
+
+  </main>
+
+
+  {{ .Scratch.Set "arg1" "Layouts >> Posts-Sanskrit-Words >> post-Sanskrit-Word.html" }}
+  {{ partial "partial-HOAB-Content-Debug.html" . }}
+
+
+</body>
+
+</html>

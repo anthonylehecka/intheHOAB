@@ -1,0 +1,140 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+    {{ partial "partial-HTMLtag-head.html" . }}
+
+<style>
+
+.pc-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  margin-top: 24px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.left-column {
+  background-color: transparent;
+  margin: 0;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.right-column {
+  background-color: transparent;
+  margin: 0;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.hero-image {
+  border: 3px solid #1A4C5C;
+}
+
+</style>
+
+</head>
+
+<!-- <body>-->
+{{ partial "partial-HTMLtag-body.html" . }}
+
+  <main class="css-pagegrid-fullwidth">
+
+    <section class="pagegrid-fullwidth-header">
+      {{ partial "partial-HOAB-SiteHeader.html" . }}
+    </section>
+
+    <section class="pagegrid-fullwidth-left-sidebar"><p>&nbsp;</p></section>
+
+    <fullwidth-page-content class="pagegrid-fullwidth-page-content">
+
+      <section class="breadcrumb-line-flex-container">
+        <div class="breadcrumb-line-flex-left">
+          {{ partial "partial-Breadcrumbs-Navby-URL.html" . }}
+        </div>
+        <div class="breadcrumb-line-flex-right">
+          <div class="navby-prev-next-post-breadcrumbs">
+            <ul>
+              <li><a href="../Fearlessness">Fearlessness</a></li>
+              <li class="post-separator">&nbsp;«&nbsp;</li>
+              <li class="thispage-gq-name">Purity of Heart</li>
+              <li class="post-separator">&nbsp;»&nbsp;</li>
+              <li><a href="../Steadfastness-in-Knowledge">Steadfastness in Knowledge</a></li>
+            </ul>
+          </div>
+          <div class="youtube-line">
+            {{ partial "partial-YouTubeLine.html" . }}
+          </div>
+        </div>
+      </section>
+	  
+	  <h1> NOT IN USE </h1>
+
+
+      <raised-content-box class="rcb-shadow-upper-left">
+        <div class="pc-row">
+          <div class="column">
+            <div class="left-column">
+              <img class="hero-image" src="../images/Post-PurityOfHeart-768x512.jpg">
+            </div>
+          </div>
+          <div class="column">
+            <div class="right-column">
+              <div class="Sanskrit-Block">
+                <div class="Sanskrit-Text">
+                  {{ .Params.Post_Sanskrit_Text }}
+                </div>
+                <div class="Sanskrit-Text-Translation">
+                  {{ .Params.Post_Sanskrit_Translation }}
+                </div>
+              </div>
+              <div class="default-paragraph-text">
+                It is of little wonder that the shared history of the people of Earth is filled with 
+                stories and sayings of the heart. For it is within our hearts, and by that is meant 
+                the innermost organ of our being, where the direct light of God first enters into each of us, 
+                that we take that light and either let it shine out unimpeded, without alteration, 
+                gloriously brilliant for the benefit of everyone around us, or else we force it to bend, 
+                twist and darken on a journey through the impurities we hold within our hearts.
+              </div>
+              <div class="default-paragraph-text">
+                A heart that is pure is incapable of performing evil deeds. For as the source of our 
+                being is Absolute Goodness, so then are the thoughts, words and deeds of a heart that 
+                has been purified and is as taintless as its source.
+              </div>
+              <div class="bible-quote-in-post">
+                Blessed are the pure in heart: for they shall see God
+              </div>
+            </div>
+          </div>
+        </div>
+      </raised-content-box>
+
+      <br><br>
+
+    </fullwidth-page-content>
+  
+    <section class="pagegrid-fullwidth-right-sidebar"><p>&nbsp;</p></section>
+    
+    <footer class="pagegrid-fullwidth-footer">
+      {{ partial "partial-HOAB-SiteFooter.html" . }}
+    </footer>
+
+  </main>
+
+
+  {{ .Scratch.Set "arg1" "Layouts >> Posts-Godly-Qualities >> post-GQ-Purity-of-Heart.html" }}
+  {{ partial "partial-HOAB-Content-Debug.html" . }}
+
+</body>
+
+</html>

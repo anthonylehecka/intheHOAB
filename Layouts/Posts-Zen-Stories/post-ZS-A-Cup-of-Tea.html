@@ -1,0 +1,100 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+    {{ partial "partial-HTMLtag-head.html" . }}
+
+</head>
+
+<!-- <body>-->
+{{ partial "partial-HTMLtag-body.html" . }}
+
+  <main class="css-pagegrid-fullwidth">
+
+    <header class="pagegrid-fullwidth-header">
+      {{ partial "partial-HOAB-SiteHeader.html" . }}
+    </header>
+
+    <section class="pagegrid-fullwidth-left-sidebar"><p>&nbsp;</p></section>
+
+    <fullwidth-page-content class="pagegrid-fullwidth-page-content  boxed-gold-border">
+
+      <section class="breadcrumb-line-flex-container">
+        <div class="breadcrumb-line-flex-left">
+          {{ partial "partial-Breadcrumbs-Navby-URL.html" . }}
+        </div>
+        <div class="breadcrumb-line-flex-right">
+          &nbsp;
+        </div>
+      </section>
+
+      <h2 class="pagename-Gelasio-Green">{{ .Params.mdThisPage_Name }}</h2>
+
+
+      <raised-content-box class="rcb-shadow-upper-left">
+        <!-- * Hack on the outer div to adjust margins within the page content box -->
+        <div style="margin: 10px 32px 0px 32px;">
+          <div class="spacer-3rem"> </div>
+
+          <div class="default-paragraph-text">
+            <p>Nan-in, a Japanese master during the Meiji era (1868-1912), received a university professor who came to inquire about Zen.</p>
+            <br>
+            <p>Nan-in served tea. He poured his visitor’s cup full, then kept on pouring.</p>
+            <br>
+            <p>The professor watched the overflow until he no longer could restrain himself. “It is overfull. No more will go in!”</p>
+            <br>
+            <p>“Like this cup,” Nan-in said, “you are full of your own opinions and speculations. How can I show you Zen unless you first empty your cup?</p>
+            <br>
+            <p class="zen-quote-source">Zen Flesh, Zen Bones</p>
+          </div>
+          <hr>
+          <div class="spacer-3rem"></div>
+          <div class="zen-comment-text">
+            <p>
+              Abundant grace rains down upon us every day, every hour, every minute, every second. We are the beneficiaries of a continuous shower of everything we need to be able to speak, to know, to hear, to laugh, to cry, to live and to love. Our lives are sustained by an unceasing flow of love from the source of our being.
+            </p>
+          
+            <br>
+            <p>
+              Do we drink in this grace? Do we benefit from this unending fountain that supplies our every need? Do we have the ability to draw from this well of living water? Or are we filled with an ocean of our own opinions and speculations? Filled with a view of ourselves as the creator of everything we are and do. So filled that we have no room for even a drop of this amazing grace? Now is the time to empty ourselves and be ready to receive what life gives us each moment of the day.
+            </p>
+          </div>
+        
+          <div class="spacer-3rem"></div>
+          <hr>
+          <div class="spacer-3rem"></div>
+          <div class="default-paragraph-text">
+            <p>
+              Jesus answered and said unto her,
+            </p>
+          </div>
+
+          <div class="bible-quote-text k99-text-align-left">
+            Whosoever drinketh of this water shall thirst again:<br>
+            But whosoever drinketh of the water that I shall give him shall never thirst;<br>
+            but the water that I shall give him shall be in him a well of water springing up into everlasting life.<br>
+          </div>
+          <p class="bible-quote-source k99-text-align-left">
+            John 4:13-14
+          </p>
+        </div>
+      </raised-content-box>
+
+    </fullwidth-page-content>
+    
+    <section class="pagegrid-fullwidth-right-sidebar">&nbsp;</section>
+    
+    <footer class="pagegrid-fullwidth-footer">
+      {{ partial "partial-HOAB-SiteFooter.html" . }}
+    </foote>
+
+  </main>
+
+
+  {{ .Scratch.Set "arg1" "Layouts >> Posts-Zen-Stories >> post-ZS-A-Cup-of-Tea.html" }}
+  {{ partial "partial-HOAB-Content-Debug.html" . }}
+
+</body>
+
+</html>

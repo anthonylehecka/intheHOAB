@@ -1,0 +1,24 @@
+
+{{ if .Site.Params.p_DebugPage }}
+  {{ if (isset .Params "debugpage") }} 
+    {{ if (.Params.debugpage) }}
+      <br>
+      <div class="pageDebugInfo">
+        <br><h6>{{ .Scratch.Get "arg1" }}</h6>
+        <br><hr>.md File Variables and Page Content<hr><br>
+        <table>
+          <tr><td>md Layouts Dir:</td><td>{{ .Params.type }}</td></tr>
+          <tr><td>md Layout Template:</td><td>{{ .Params.type }} >> {{ .Params.layout }}.html</td></tr>
+          <tr><td>md Public URL:</td><td>{{ .Params.url }}</td></tr>
+        </table>
+        <br>
+        Begin Page Content
+        <br>
+        {{ .Content }}
+        <br>
+        End Page Content
+    </div>
+    <br><br>
+    {{ end }}
+  {{ end }}
+{{ end }}

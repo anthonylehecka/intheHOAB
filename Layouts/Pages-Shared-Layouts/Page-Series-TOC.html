@@ -1,0 +1,63 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  {{ partial "partial-HTMLtag-head.html" . }}
+
+</head>
+
+{{ $json := getJSON "Data/SubjectRoot-IndexPages.json" }}
+{{ $mdFile_ThisPage_Name := .Params.mdMeta_ThisPage_Name }}
+
+<!-- <body>-->
+{{ partial "partial-HTMLtag-body.html" . }}
+
+  <main class="css-pagegrid-series-toc">
+
+    <header class="pagegrid-series-toc-header">
+      {{ partial "partial-HOAB-SiteHeader.html" . }}
+    </header>
+
+    <series-toc-page-content class="pagegrid-series-toc-page-content  boxed-gold-border">
+    
+      {{ partial "partial-Breadcrumbs-Navby-URL.html" . }}
+
+      <h2 class="pagename-Gelasio-Green">{{ .Params.mdThisPage_Name }}</h2>
+      <br>
+
+      <div class="default-paragraph-text">
+        {{ .Params.mdThisPage_Overview }}
+      </div>
+
+      <!-- Subject List / Table of Contents / Index Page || Call it what you will -->
+      <div>
+        {{ range $json }}   {{/* The ENTIRE JSON File */}}
+        {{ if eq .JSONDataSubjectRoot $mdFile_ThisPage_Name  }}   {{/* Match on Markdown File Landing Page Name */}}
+          {{ $subjectrootdata := . }}   {{/* The matched sections data */}}
+            {{ range $thissubject := $subjectrootdata.listofSubjects }}    {{/* The array of information */}}
+              {{ partial "partial-Subject-TOC.html" $thissubject }}
+            {{ end }}
+        {{ end }}
+      {{ end }}
+      </div>
+    </series-toc-page-content>
+  
+    <section class="pagegrid-series-toc-right-sidebar  boxed-gold-border">
+      <h2>Around This Website</h2>
+      {{ partial "partial-Sidebar-Navmenu-Main.html" . }}
+    </section>
+  
+    <footer class="pagegrid-series-toc-footer">
+      {{ partial "partial-HOAB-SiteFooter.html" . }}
+    </footer>
+
+  </main>
+
+
+{{ .Scratch.Set "arg1" "Layouts >> Pages-Shared-Layouts >> Page-Series-TOC.html" }}
+{{ partial "partial-HOAB-Content-Debug.html" . }}
+
+</body>
+
+</html>
