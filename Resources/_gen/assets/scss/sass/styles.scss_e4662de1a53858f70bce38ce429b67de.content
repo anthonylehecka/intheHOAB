@@ -1,0 +1,821 @@
+/* Josh's Custom CSS Reset https://www.joshwcomeau.com/css/custom-css-reset/ */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/* * =========================================================================================================================== */
+/* * archivo-narrow-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Archivo Narrow";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/archivo-narrow-v30-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * archivo-narrow-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Archivo Narrow";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/archivo-narrow-v30-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * =========================================================================================================================== */
+/* * cabin-condensed-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Cabin Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/cabin-condensed-v20-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * cabin-condensed-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Cabin Condensed";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/cabin-condensed-v20-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * cabin-condensed-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Cabin Condensed";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/cabin-condensed-v20-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * cabin-condensed-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Cabin Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/cabin-condensed-v20-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * =========================================================================================================================== */
+/* * courgette-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Courgette";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/courgette-v17-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * =========================================================================================================================== */
+/* * gelasio-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Gelasio";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/gelasio-v10-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * gelasio-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Gelasio";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/gelasio-v10-latin-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * gelasio-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Gelasio";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/gelasio-v10-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * gelasio-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Gelasio";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/gelasio-v10-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * =========================================================================================================================== */
+/* * libre-caslon-text-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Libre Caslon Text";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/libre-caslon-text-v5-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * libre-caslon-text-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Libre Caslon Text";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/libre-caslon-text-v5-latin-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * libre-caslon-text-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Libre Caslon Text";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/libre-caslon-text-v5-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * =========================================================================================================================== */
+/* * noto-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/noto-sans-v35-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * =========================================================================================================================== */
+/* * Sanskrit2003-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: Sanskrit2003;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Sanskrit2003.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * Heart of All Beings Global Variables */
+/* Today is January 12, 2024 Counter: 002*/
+:root {
+  --Brick: #7E2811;
+  /* * Body Text */
+  --Default-Body-Text: #7E2811;
+  /* * Redefines Body Text */
+  --Cinnamon-Text: #5C0013;
+  /* * Alternate Body Text */
+  --Area-Background: #FFFAEB;
+  --Content-Background: #F2EDDE; /* 5% Darker than Area-Background */
+  --Content-Background: #F5F0E1; /* 4% Darker than Area-Background */
+  --Content-Background: #F7F2E3; /* 3% Darker than Area-Background */
+  /* * Content Boxes, etc. */
+  --Site-Background: #FCF7F7;
+  /* * Behind Image */
+  --Header-H1-Red: #D62D1A;
+  /* * H1 to H6 Gradually Darkens */
+  --Header-H2-Red: #BD1401;
+  --Header-H3-Red: #A30000;
+  --Header-H4-Red: #8A0000;
+  --Header-H5-Red: #700000;
+  --Header-H6-Red: #570000;
+  --Audio-Green: #C4E4B5;
+  --Audio-Orange: #FFBB72;
+  --Breadcrumb: #484837;
+  --Breadcrumb-Hover: #EE5500;
+  --Border-Red: #A52A2A;
+  --Border-Gold: #E2A30A;
+  --Bible-Text: #FF0000;
+  --Bible-Source: #FF8C00;
+  --Quote-Text: #234F1E;
+  --Quote-Source: #FF8C00;
+  --Coral: #FE7D6A;
+  --Dark-Orange: #FF8C00;
+  --Gelasio-Green: #7C795D;
+  --Honey: #EC9705;
+  --Orange: #ED7014;
+  --Pink: #F699CD;
+  --Pine: #234F1E;
+  --Saddle-Brown: #8B4513;
+  --Saffron: #FBB917;
+  --Salmon: #FF907F;
+  --Sanskrit-Red: #A52A2A;
+  --Tangerine: #FA8128;
+  --Tawny: #80471C;
+}
+
+/* * See articles on rem for this trick to make rem to px calculation easy */
+/* * Assumption for this trick is that the default px size of text is 16px in all browsers */
+html {
+  font-size: 62.5%;
+}
+
+/* * Makes font size in px = to 10px */
+body {
+  font-size: 1.5rem;
+}
+
+/* * 10px times 1.5 =15px  */
+h1 {
+  font-size: 3.6rem;
+}
+
+/* * =36px */
+h2 {
+  font-size: 3.2rem;
+}
+
+/* * =32px */
+h3 {
+  font-size: 2.8rem;
+}
+
+/* * =28px */
+h4 {
+  font-size: 2.4rem;
+}
+
+/* * =24px */
+h5 {
+  font-size: 2.2rem;
+}
+
+/* * =22px */
+h6 {
+  font-size: 2rem;
+}
+
+/* * =20px */
+ul {
+  font-size: 1.1em;
+}
+
+/* * =11px? */
+li {
+  font-size: 1.1em;
+}
+
+/* * =11px? */
+body {
+  color: var(--Default-Body-Text);
+  font-family: "Libre Caslon Text", serif;
+}
+
+h1 {
+  color: var(--Header-H1-Red);
+  font-family: "Cabin Condensed", sans-serif;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+h2 {
+  color: var(--Header-H2-Red);
+  font-family: "Cabin Condensed", sans-serif;
+}
+
+h2.pagename-Gelasio-Green {
+  color: var(--Gelasio-Green);
+  font-family: "Gelasio", serif;
+  font-size: 3rem;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+h3 {
+  color: var(--Header-H3-Red);
+  font-family: "Cabin Condensed", sans-serif;
+}
+
+h4 {
+  color: var(--Header-H4-Red);
+  font-family: "Cabin Condensed", sans-serif;
+}
+
+h5 {
+  color: var(--Header-H5-Red);
+  font-family: "Cabin Condensed", sans-serif;
+}
+
+h6 {
+  color: var(--Header-H6-Red);
+  font-family: "Cabin Condensed", sans-serif;
+}
+
+.Sanskrit-Text {
+  font-family: "Sanskrit2003", serif;
+  font-size: 5.5rem;
+  color: var(--Sanskrit-Red);
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.Sanskrit-Text-Translation {
+  font-family: "Courgette", serif;
+  font-size: 2.8rem;
+  color: var(--Saddle-Brown);
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+/* * The Breadcrumb Line is navyby-url-breadcrumb on the left */
+/* * and navby-prev-next-post-breadcrumb on the right */
+.breadcrumb-line-flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.breadcrumb-line-flex-left {
+  width: 50%;
+}
+
+.breadcrumb-line-flex-right {
+  width: 50%;
+}
+
+/* * BreadCrumbs (Site Tree Navigation by URL) */
+div.navby-url-breadcrumbs {
+  width: 100%;
+  border-style: none;
+  padding: 0;
+}
+
+.navby-url-breadcrumbs ul {
+  list-style: none;
+  margin: 0px;
+  padding-left: 0px;
+  font-size: 90%;
+}
+
+.navby-url-breadcrumbs ul li {
+  display: inline-block;
+  margin-right: 0px;
+}
+
+.navby-url-breadcrumbs ul li.url-separator {
+  font-size: 160%;
+}
+
+.navby-url-breadcrumbs ul li.prior-page-name {
+  color: var(--Breadcrumb-Hover);
+}
+
+.navby-url-breadcrumbs ul li a {
+  color: var(--Breadcrumb);
+  text-decoration: none;
+}
+
+.navby-url-breadcrumbs ul li a:hover {
+  color: var(--Breadcrumb-Hover);
+  text-decoration: none;
+}
+
+/* * BreadCrumbs (Posts Navigation by Prev|Current|Next Post) */
+div.navby-prev-next-post-breadcrumbs {
+  width: 100%;
+  border-style: none;
+  padding: 0;
+  text-align: right;
+}
+
+.navby-prev-next-post-breadcrumbs ul {
+  list-style: none;
+  margin: 0px;
+  padding-left: 0px;
+  font-size: 90%;
+}
+
+.navby-prev-next-post-breadcrumbs ul li {
+  display: inline-block;
+  margin-right: 0px;
+}
+
+.navby-prev-next-post-breadcrumbs ul li.post-separator {
+  font-size: 160%;
+}
+
+.navby-prev-next-post-breadcrumbs ul li.thispage-gq-name {
+  color: var(--Breadcrumb-Hover);
+}
+
+.navby-prev-next-post-breadcrumbs ul li a {
+  color: var(--Breadcrumb);
+  text-decoration: none;
+}
+
+.navby-prev-next-post-breadcrumbs ul li a:hover {
+  color: var(--Breadcrumb-Hover);
+  text-decoration: none;
+}
+
+/* * Spacers (Empty Space) */
+/* ! N.B. The 'Hot Pink' Background should never show as these spacers */
+/* !          should be applied to empty divs only. Otherwise even a simple */
+/* !          &nbsp; will make the spacer too large (vertically) */
+.spacer-1rem {
+  margin: 0;
+  padding: 0;
+  margin-top: 1rem;
+  background-color: #FF10F0;
+}
+
+.spacer-2rem {
+  margin: 0;
+  padding: 0;
+  margin-top: 2rem;
+  background-color: #FF10F0;
+}
+
+.spacer-3rem {
+  margin: 0;
+  padding: 0;
+  margin-top: 3rem;
+  background-color: #FF10F0;
+}
+
+/* * Spacer (<HR> Like */
+.thinline {
+  height: 0;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent;
+  border-top: 1px solid var(--Salmon);
+  border-bottom: 1px solid darkgray;
+  width: 90%;
+  text-align: center;
+}
+
+/* Default Layout is 3 Columns */
+.css-pagegrid-homepage {
+  display: grid;
+  grid-template-columns: 1% auto 30%;
+  grid-template-areas: "gtaHP-page-header  gtaHP-page-header  gtaHP-page-header" "gtaHP-left-sidebar gtaHP-page-content gtaHP-right-sidebar" "gtaHP-page-footer  gtaHP-page-footer  gtaHP-page-footer";
+}
+
+.pagegrid-homepage-header {
+  grid-area: gtaHP-page-header;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+.pagegrid-homepage-left-sidebar {
+  grid-area: gtaHP-left-sidebar;
+  margin: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0px;
+}
+
+.pagegrid-homepage-page-content {
+  grid-area: gtaHP-page-content;
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: #FFFAEB;
+  border-width: 2px 2px 2px 2px;
+  border-color: var(--Border-Red);
+  border-style: solid;
+}
+
+.pagegrid-homepage-right-sidebar {
+  grid-area: gtaHP-right-sidebar;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  background-color: #FFFAEB;
+  border-width: 2px 2px 2px 2px;
+  border-color: var(--Border-Red);
+  border-style: solid;
+}
+
+.pagegrid-homepage-footer {
+  grid-area: gtaHP-page-footer;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: var(--Salmon);
+  border-bottom: 2px solid whitesmoke;
+  text-align: center;
+}
+
+/* Default Layout is 3 Columns */
+.css-pagegrid-series-toc {
+  display: grid;
+  grid-template-columns: 1% auto 30%;
+  grid-template-areas: "gtaSTOC-page-header  gtaSTOC-page-header  gtaSTOC-page-header" "gtaSTOC-left-sidebar gtaSTOC-page-content gtaSTOC-right-sidebar" "gtaSTOC-page-footer  gtaSTOC-page-footer  gtaSTOC-page-footer";
+}
+
+.pagegrid-series-toc-header {
+  grid-area: gtaSTOC-page-header;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+.pagegrid-series-toc-left-sidebar {
+  grid-area: gtaSTOC-left-sidebar;
+  margin: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0px;
+}
+
+.pagegrid-series-toc-page-content {
+  grid-area: gtaSTOC-page-content;
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: #FFFAEB;
+  border-width: 2px 2px 2px 2px;
+  border-color: var(--Border-Gold);
+  border-style: solid;
+}
+
+.pagegrid-series-toc-right-sidebar {
+  grid-area: gtaSTOC-right-sidebar;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  background-color: #FFFAEB;
+  border-width: 2px 2px 2px 2px;
+  border-color: var(--Border-Gold);
+  border-style: solid;
+}
+
+.pagegrid-series-toc-footer {
+  grid-area: gtaSTOC-page-footer;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: var(--Salmon);
+  border-bottom: 2px solid whitesmoke;
+  text-align: center;
+}
+
+/* 
+@media only screen and (min-width: 500px)  {
+	.page-wrapper {
+		grid-template-columns: 20% auto;
+		grid-template-areas:
+		"header        header"
+		"left-sidebar  content"
+		"right-sidebar right-sidebar"
+		"footer        footer";
+	}
+}
+*/
+/*
+@media only screen and (min-width: 600px)   {
+	.css-pagegrid-series-toc {
+		display: grid;
+		grid-template-columns: 5% auto 30%;
+		grid-template-areas:
+		"gtaSTOC-page-header  gtaSTOC-page-header   gtaSTOC-page-header"
+		"gtaSTOC-left-sidebar gtaSTOC-page-content  gtaSTOC-right-sidebar"
+		"gtaSTOC-page-footer  gtaSTOC-page-footer   gtaSTOC-page-footer";
+
+	}
+}
+*/
+/* Default Layout is 3 Columns */
+.css-pagegrid-fullwidth {
+  display: grid;
+  grid-template-columns: 1% auto 1%;
+  grid-template-areas: "gtaFW-page-header  gtaFW-page-header  gtaFW-page-header" "gtaFW-left-sidebar gtaFW-page-content gtaFW-right-sidebar" "gtaFW-page-footer  gtaFW-page-footer  gtaFW-page-footer";
+}
+
+.pagegrid-fullwidth-header {
+  grid-area: gtaFW-page-header;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+.pagegrid-fullwidth-left-sidebar {
+  grid-area: gtaFW-left-sidebar;
+  margin: 0;
+  margin-left: 1px;
+  margin-right: 1px;
+  padding: 0;
+}
+
+.pagegrid-fullwidth-page-content {
+  grid-area: gtaFW-page-content;
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: #FFFAEB;
+  border-width: 2px 2px 2px 2px;
+  border-color: var(--Border-Gold);
+  border-style: solid;
+}
+
+.pagegrid-fullwidth-right-sidebar {
+  grid-area: gtaFW-right-sidebar;
+  margin: 0;
+  margin-left: 1px;
+  margin-right: 1px;
+  padding: 0;
+}
+
+.pagegrid-fullwidth-footer {
+  grid-area: gtaFW-page-footer;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: var(--Salmon);
+  border-bottom: 2px solid whitesmoke;
+  text-align: center;
+}
+
+/* 
+@media only screen and (min-width: 500px)  {
+	.page-wrapper {
+		grid-template-columns: 20% auto;
+		grid-template-areas:
+		"header        header"
+		"left-sidebar  content"
+		"right-sidebar right-sidebar"
+		"footer        footer";
+	}
+}
+*/
+/*
+@media only screen and (min-width: 600px)   {
+	.css-pagegrid-series-toc {
+		display: grid;
+		grid-template-columns: 3% auto 10%;
+		grid-template-areas:
+		"gtaFW-page-header  gtaFW-page-header gtaFW-page-header"
+		"gtaFW-left-sidebar gtaFW-page-content     gtaFW-right-sidebar"
+		"gtaFW-page-footer  gtaFW-page-footer gtaFW-page-footer";
+
+	}
+}
+*/
+.page-content-boxed {
+  background-color: var(--Content-Background);
+  border-radius: 6px;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 3px 4px 5px 0px rgba(189, 20, 1, 0.4);
+  margin: 0;
+  margin-top: 18px;
+  margin-left: 18px;
+  margin-right: 18px;
+  padding: 0;
+  padding-top: 6px;
+  padding-bottom: 18px;
+  padding-left: 24px;
+  padding-right: 36px;
+}
+
+.flex-row-center {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.flex-row-left {
+  display: flex;
+  justify-content: left;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.flex-row-right {
+  display: flex;
+  justify-content: right;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.quote-borders-top-bottom {
+  border-top: 1px solid var(--Tawny);
+  border-bottom: 1px solid var(--Tawny);
+}
+
+.quote-border-top {
+  border-top: 1px solid var(--Tawny);
+}
+
+.quote-border-bottom {
+  border-bottom: 1px solid var(--Tawny);
+}
+
+.default-paragraph-text {
+  color: var(--Default-Body-Text);
+  font-style: normal;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  text-align: justify;
+}
+
+.bible-quote-text {
+  color: var(--Bible-Text);
+  font-style: normal;
+  margin: 0;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.bible-quote-source {
+  color: var(--Bible-Source);
+  font-style: normal;
+  margin: 8px 15px 0px 15px; /* Top - Right - Bottom - Left */
+  text-align: center;
+}
+
+.standard-quote-text {
+  color: var(--Quote-Text);
+  font-style: italic;
+  margin: 0;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.standard-quote-source {
+  color: var(--Quote-Source);
+  font-style: normal;
+  margin: 8px 15px 0px 15px; /* Top - Right - Bottom - Left */
+  text-align: center;
+}
+
+a.topicLink {
+  color: var(--Breadcrumb);
+  text-decoration: none;
+}
+
+.zzhoab-siteheader-grid {
+  display: flex;
+  flex-direction: row;
+  background-color: aqua;
+}
+
+.zzhoab-siteheader-logo {
+  width: 33%;
+  place-content: center;
+  background-color: red;
+  height: 150px;
+  margin: 0;
+  padding: 20px;
+  border-top: 20px solid green;
+  border-bottom: 3px solid #E2A30A;
+}
+
+.zzhoab-siteheader-menu {
+  width: 67%;
+  place-content: space-around;
+  vertical-align: middle;
+  background-color: #E8BD8D;
+  background-color: pink;
+  height: 150px;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  border-top: 3px solid #FE7D6A;
+  border-left: 2px dotted whitesmoke;
+  border-bottom: 3px solid #E2A30A;
+}
+
+/* CSS Document */
+/* This Navigation Menu from https://codepen.io/andornagy/pen/ALbdbJ */

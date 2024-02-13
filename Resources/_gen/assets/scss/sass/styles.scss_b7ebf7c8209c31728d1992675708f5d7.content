@@ -1,0 +1,1341 @@
+/* Josh's Custom CSS Reset https://www.joshwcomeau.com/css/custom-css-reset/ */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  max-width: 100%;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 0.75rem;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/* * =========================================================================================================================== */
+/* * archivo-narrow-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Archivo Narrow";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/archivo-narrow-v30-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * archivo-narrow-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Archivo Narrow";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/archivo-narrow-v30-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * =========================================================================================================================== */
+/* * cabin-condensed-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Cabin Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/cabin-condensed-v20-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * cabin-condensed-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Cabin Condensed";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/cabin-condensed-v20-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * cabin-condensed-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Cabin Condensed";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/cabin-condensed-v20-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * cabin-condensed-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Cabin Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/cabin-condensed-v20-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * =========================================================================================================================== */
+/* * courgette-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Courgette";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/courgette-v17-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * =========================================================================================================================== */
+/* * Envy Code R-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Envy Code R";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/EnvyCodeR.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * =========================================================================================================================== */
+/* * gelasio-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Gelasio";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/gelasio-v10-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * gelasio-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Gelasio";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/gelasio-v10-latin-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * gelasio-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Gelasio";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/gelasio-v10-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * gelasio-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Gelasio";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/gelasio-v10-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * =========================================================================================================================== */
+/* * gentium-plus-regular - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Gentium Plus";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/gentium-plus-v2-latin_latin-ext-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* gentium-plus-italic - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Gentium Plus";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/gentium-plus-v2-latin_latin-ext-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * =========================================================================================================================== */
+/* * libre-caslon-text-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Libre Caslon Text";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/libre-caslon-text-v5-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * libre-caslon-text-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Libre Caslon Text";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/libre-caslon-text-v5-latin-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * libre-caslon-text-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Libre Caslon Text";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/libre-caslon-text-v5-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * =========================================================================================================================== */
+/* * noto-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/noto-sans-v35-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * =========================================================================================================================== */
+/* * Sanskrit2003-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: Sanskrit2003;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Sanskrit2003.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* * Heart of All Beings Global Variables */
+/* Today is January 12, 2024 Counter: 002*/
+:root {
+  --Brick: #7E2811;
+  /* * Body Text */
+  --Default-Body-Text: #7E2811;
+  --Default-Body-Text-20pct-Lighter: #B15B44;
+  /* * Redefines Body Text */
+  --Cinnamon-Text: #5C0013;
+  /* * Alternate Body Text */
+  --Boxed-Content-Background: #FFFAEB;
+  --Content-Background: #FFF6E5; /* A different approach */
+  /* * Content Boxes, etc. */
+  --Site-Background: #FCF7F7;
+  /* * Behind Image */
+  --Header-H1-Red: #D62D1A;
+  /* * H1 to H6 Gradually Darkens */
+  --Header-H2-Red: #BD1401;
+  --Header-H3-Red: #A30000;
+  --Header-H4-Red: #8A0000;
+  --Header-H5-Red: #700000;
+  --Header-H6-Red: #570000;
+  --Audio-Green: #C4E4B5;
+  --Audio-Orange: #FFBB72;
+  --Breadcrumb: #484837;
+  --Breadcrumb-Hover: #EE5500;
+  --Border-Red: #A52A2A;
+  --Border-Gold: #E2A30A;
+  --Bible-Text: #FF0000;
+  --Bible-Source: #A30000;
+  --Quote-Text: #234F1E;
+  --Quote-Source: #FF8C00;
+  --Quote-Text-Shadow: #D9D0BF;
+  --Quote-Source-Shadow: #D9D0BF;
+  --Coral: #FE7D6A;
+  --Dark-Orange: #FF8C00;
+  --Gelasio-Green: #7C795D;
+  --Honey: #EC9705;
+  --Old-Mauve: #673147;
+  --Orange: #ED7014;
+  --Pink: #F699CD;
+  --Pine: #234F1E;
+  --Saddle-Brown: #8B4513;
+  --Saffron: #FBB917;
+  --Salmon: #FF907F;
+  --Sanskrit-Red: #A52A2A;
+  --Tangerine: #FA8128;
+  --Tawny: #80471C;
+}
+
+/* * See articles on rem for this trick to make rem to px calculation easy */
+/* * Assumption for this trick is that the default px size of text is 16px in all browsers */
+/* * Makes font size in px = to 10px (62.5% of 16 = 10) */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--Default-Body-Text);
+  font-family: "Libre Caslon Text", serif;
+  font-size: 1.5rem; /* * 10px times 1.5 =15px  */
+  font-style: normal;
+}
+
+h1 {
+  font-size: 3.6rem;
+} /* * =36px */
+h2 {
+  font-size: 3.2rem;
+} /* * =32px */
+h3 {
+  font-size: 2.8rem;
+} /* * =28px */
+h4 {
+  font-size: 2.4rem;
+} /* * =24px */
+h5 {
+  font-size: 2.2rem;
+} /* * =22px */
+h6 {
+  font-size: 2rem;
+} /* * =20px */
+h1 {
+  color: var(--Header-H1-Red);
+  font-family: "Cabin Condensed", sans-serif;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: var(--Header-H2-Red);
+  font-family: "Cabin Condensed", sans-serif;
+}
+
+h2.pagename-Gelasio-Green {
+  color: var(--Gelasio-Green);
+  font-family: "Gelasio", serif;
+  font-size: 3rem;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+h3 {
+  color: var(--Header-H3-Red);
+  font-family: "Cabin Condensed", sans-serif;
+}
+
+h4 {
+  color: var(--Header-H4-Red);
+  font-family: "Cabin Condensed", sans-serif;
+}
+
+h5 {
+  color: var(--Header-H5-Red);
+  font-family: "Cabin Condensed", sans-serif;
+}
+
+h6 {
+  color: var(--Header-H6-Red);
+  font-family: "Cabin Condensed", sans-serif;
+}
+
+hr {
+  border-top: 0.5px solid var(--Honey);
+  border-bottom: 0.5px solid #CCCCCC;
+}
+
+.boxed-gold-border {
+  border-color: var(--Border-Gold);
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+}
+
+.boxed-red-border {
+  border-color: var(--Border-Red);
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+}
+
+.Sanskrit-Block {
+  border-top: 2px solid var(--Salmon);
+  border-bottom: 2px solid var(--Salmon);
+  text-align: center;
+}
+
+.Sanskrit-Text {
+  font-family: "Sanskrit2003", serif;
+  font-size: 5.5rem;
+  color: var(--Sanskrit-Red);
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.Sanskrit-Text-Translation {
+  font-family: "Courgette", serif;
+  font-size: 2.8rem;
+  color: var(--Saddle-Brown);
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.Sanskrit-Word-or-Phrase-Devanagari {
+  font-family: "Sanskrit2003", serif;
+  font-size: 5rem;
+  color: var(--Sanskrit-Red);
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.Sanskrit-Word-or-Phrase-Translation {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--Gelasio-Green);
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.Sanskrit-Word-or-Phrase-Pronunciation {
+  font-family: "Gentium Plus", serif;
+  font-size: 2rem;
+  color: #3A68C4;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.Sanskrit-Word-or-Phrase-Definition {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 1.4rem;
+  color: var(--Default-Body-Text);
+  margin: 0;
+  padding: 0;
+}
+
+/* * Spacers (Empty Space) */
+/* ! N.B. The 'Hot Pink' Background should never show as these spacers */
+/* !          should be applied to empty divs only. Otherwise even a simple */
+/* !          &nbsp; will make the spacer too large (vertically) */
+.spacer-1rem {
+  margin-top: 1rem;
+  background-color: #FF10F0;
+}
+
+.spacer-2rem {
+  margin-top: 2rem;
+  background-color: #FF10F0;
+}
+
+.spacer-3rem {
+  margin-top: 3rem;
+  background-color: #FF10F0;
+}
+
+.spacer-4rem {
+  margin-top: 4rem;
+  background-color: #FF10F0;
+}
+
+.spacer-5rem {
+  margin-top: 5rem;
+  background-color: #FF10F0;
+}
+
+/* * Spacer (<HR> Like */
+.thinline {
+  height: 0;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent;
+  border-top: 0.5px solid var(--Salmon);
+  border-bottom: 0.5px solid darkgray;
+  width: 90%;
+  text-align: center;
+}
+
+/* * Heart of All Beings Site Header Logo and Navigation */
+.hoab-site-header-01 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border-top: 3px solid #FE7D6A;
+  border-bottom: 3px solid #E2A30A;
+  background-color: #E8BD8D;
+  margin: 0;
+  padding: 0;
+}
+
+.hoab-site-header-01-logo {
+  float: left;
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  padding-left: 16px;
+}
+
+.hoab-site-header-01-logo img {
+  max-height: 180px;
+  float: left;
+  margin: 0;
+  padding: 0;
+  padding-top: 8px;
+}
+
+.hoab-site-header-01-navigation {
+  width: 66%;
+  padding: 0;
+  margin: auto;
+}
+
+.hoab-alt-navbar {
+  text-align: right;
+  margin-right: 32px;
+  font-family: "Noto Sans";
+  font-size: 1.6rem;
+}
+
+/* a link */
+.hoab-alt-navbar > a {
+  text-decoration: none;
+}
+
+/* unvisited link */
+.hoab-alt-navbar > a:link {
+  color: var(--Default-Body-Text-20pct-Lighter);
+}
+
+/* visited link */
+.hoab-alt-navbar > a:visited {
+  color: var(--Default-Body-Text);
+}
+
+/* mouse over link */
+.hoab-alt-navbar > a:hover {
+  color: var(--Coral);
+}
+
+/* ========================================================================= */
+/* Sidebar Navigation Menu */
+.sidebar-navmenu-main {
+  margin: 0px;
+  margin-bottom: 16px;
+  padding: 0px;
+}
+
+.sidebar-navmenu-main ul {
+  list-style: none;
+  margin: 0px;
+  padding-left: 24px;
+}
+
+.sidebar-navmenu-main ul li::before {
+  content: "•";
+  color: var(--Header-H6-Red);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.sidebar-navmenu-main ul li {
+  margin: 0px;
+  margin-top: 6px;
+  line-height: 2.6rem;
+}
+
+.sidebar-navmenu-main ul li a {
+  margin: 0px;
+  font-size: 1.8rem;
+  color: var(--Header-H4-Red);
+}
+
+.sidebar-navmenu-main ul li ul li::before {
+  content: "•";
+  color: var(--Gelasio-Green);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.sidebar-navmenu-main ul li ul li {
+  margin: 0px;
+  font-size: 16px;
+  line-height: 2.5rem;
+}
+
+.sidebar-navmenu-main ul li ul li a {
+  margin: 0px;
+  font-size: 1.6rem;
+  color: var(--Gelasio-Green);
+}
+
+/* * The Breadcrumb Line is navyby-url-breadcrumb on the left */
+/* * and navby-prev-next-post-breadcrumb on the right */
+.breadcrumb-line-flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.breadcrumb-line-flex-left {
+  width: 50%;
+}
+
+.breadcrumb-line-flex-right {
+  width: 50%;
+}
+
+/* * BreadCrumbs (Site Tree Navigation by URL) */
+div.navby-url-breadcrumbs {
+  width: 100%;
+  border-style: none;
+  padding: 0;
+}
+
+.navby-url-breadcrumbs ul {
+  list-style: none;
+  margin: 0px;
+  padding-left: 0px;
+  font-size: 90%;
+}
+
+.navby-url-breadcrumbs ul li {
+  display: inline-block;
+  margin-right: 0px;
+}
+
+.navby-url-breadcrumbs ul li.url-separator {
+  font-size: 160%;
+}
+
+.navby-url-breadcrumbs ul li.prior-page-name {
+  color: var(--Breadcrumb-Hover);
+}
+
+.navby-url-breadcrumbs ul li a {
+  color: var(--Breadcrumb);
+  text-decoration: none;
+}
+
+.navby-url-breadcrumbs ul li a:hover {
+  color: var(--Breadcrumb-Hover);
+  text-decoration: none;
+}
+
+/* * BreadCrumbs (Posts Navigation by Prev|Current|Next Post) */
+div.navby-prev-next-post-breadcrumbs {
+  width: 100%;
+  border-style: none;
+  padding: 0;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.navby-prev-next-post-breadcrumbs ul {
+  list-style: none;
+  margin: 0px;
+  padding-left: 0px;
+  font-size: 90%;
+}
+
+.navby-prev-next-post-breadcrumbs ul li {
+  display: inline-block;
+  margin-right: 0px;
+}
+
+.navby-prev-next-post-breadcrumbs ul li.post-separator {
+  font-size: 160%;
+}
+
+.navby-prev-next-post-breadcrumbs ul li.thispage-gq-name {
+  color: var(--Breadcrumb-Hover);
+}
+
+.navby-prev-next-post-breadcrumbs ul li a {
+  color: var(--Breadcrumb);
+  text-decoration: none;
+}
+
+.navby-prev-next-post-breadcrumbs ul li a:hover {
+  color: var(--Breadcrumb-Hover);
+  text-decoration: none;
+}
+
+/* ======================================================================= */
+/* Generic Major Subject Area, List of Subjects Page (TOC) Page */
+.Major-Subject-Area-Topics {
+  display: grid;
+  grid-template-columns: 33% 20px auto;
+  text-align: left;
+  margin-top: 36px;
+}
+
+/* Left Side is Topic Name and Link */
+.MSA-Topic-Name {
+  border-top: 3px solid var(--Salmon);
+  margin: 0;
+  padding: 0;
+  padding-top: 6px;
+  padding-left: 6px;
+  text-align: left;
+}
+
+a.topicLink {
+  color: var(--Breadcrumb);
+  text-decoration: none;
+}
+
+/* Right Side is Topic Description */
+.MSA-Topic-Description {
+  border-top: 3px solid var(--Pine);
+  margin: 0;
+  padding: 0;
+  padding-top: 6px;
+  padding-left: 6px;
+  text-align: left;
+}
+
+/* ======================================================================= */
+/* Generic Multi Column Table of Contents (TOC) Page [From Selection of Major Subject] */
+/* container */
+.TOC-Flexbox-Multi-Columns {
+  width: 100%;
+  display: flex;
+  margin: 0;
+}
+
+/* columns */
+.TOC-Flexbox-Multi-Columns > * {
+  width: 100%; /* 100% is correct. Let CSS spread it out evenly */
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
+}
+
+.TOC-Column-Title-and-Posts ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.TOC-Column-Title-and-Posts ul li {
+  margin: 0;
+  margin-top: 12px;
+}
+
+.TOC-Column-Title-and-Posts a {
+  color: var(--Gelasio-Green);
+  font-family: "Gelasio", sans-serif;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.TOC-Column-Title-and-Posts a:hover {
+  color: var(--Coral);
+}
+
+/* ======================================================================= */
+/* Custom Element for readability. Set to display: block to equal div tag
+    (not so necessary on home page but vital on many pages */
+raised-content-box {
+  display: block;
+  background-color: var(--Content-Background);
+  border: 1px solid #FAF1E0;
+  margin: 0;
+  margin-top: 18px;
+  margin-left: 18px;
+  margin-right: 18px;
+  padding: 0;
+  padding-top: 6px;
+  padding-bottom: 18px;
+  padding-left: 24px;
+  padding-right: 36px;
+}
+
+small-content-box {
+  display: block;
+  border: 1px solid var(--Border-Red);
+  margin: 6px;
+  padding: 6px;
+}
+
+/* For Indexy or TOC type pages */
+.rcb-shadow-lower-right {
+  --rcb-shadow-LR: #F2C8BC;
+  border-radius: 6px;
+  box-shadow: 3px 4px 5px 0px var(--rcb-shadow-LR); /* offset-x | offset-y | blur-radius | spread-radius | color */
+}
+
+/* For Individual Post type pages */
+.rcb-shadow-upper-left {
+  --rcb-shadow-UL: #F1DBCC;
+  margin-top: 32px; /* On Individual Posts, looks better a bit lower. YMMV */
+  border-radius: 6px;
+  box-shadow: -3px -4px 5px 0px var(--rcb-shadow-UL); /* offset-x | offset-y | blur-radius | spread-radius | color */
+}
+
+.flex-row-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.flex-row-left {
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+}
+
+.flex-row-right {
+  display: flex;
+  justify-content: right;
+  margin-top: 20px;
+}
+
+.default-paragraph-text {
+  color: var(--Default-Body-Text);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-wrap: pretty;
+}
+
+.k99-text-align-left {
+  text-align: left;
+}
+
+.k99-text-align-center {
+  text-align: center;
+}
+
+.k99-text-align-right {
+  text-align: right;
+}
+
+.k99-text-align-justify {
+  text-align: justify;
+}
+
+.k99-font-style-italic {
+  font-style: italic;
+}
+
+.k99-margin-left-right-10 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.k99-margin-left-right-20 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.k99-margin-left-right-30 {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.quote-borders-top-bottom {
+  border-top: 1px solid var(--Tawny);
+  border-bottom: 1px solid var(--Tawny);
+}
+
+.quote-border-top {
+  border-top: 1px solid var(--Tawny);
+}
+
+.quote-border-bottom {
+  border-bottom: 1px solid var(--Tawny);
+}
+
+.bible-quote-text {
+  color: var(--Bible-Text);
+  text-shadow: 0.5px 0.5px 1px #B0B0B0; /* offset-x | offset-y | blur-radius | color */
+}
+
+.bible-quote-in-post {
+  border-right: 2px solid var(--Bible-Text);
+  color: var(--Bible-Text);
+  margin-top: 10px;
+  padding-right: 8px;
+  text-shadow: 0.5px 0.5px 1px #B0B0B0; /* offset-x | offset-y | blur-radius | color */
+}
+
+.bible-quote-source {
+  color: var(--Bible-Source);
+  margin: 8px 0px 8px 0px; /* Top - Right - Bottom - Left */
+  text-shadow: 1px 1px 2px var(--Quote-Source-Shadow); /* offset-x | offset-y | blur-radius | color */
+}
+
+.bible-quote-verses {
+  list-style-position: outside;
+  border: solid 2px var(--Border-Red);
+  margin-left: 20px;
+  padding: 12px 24px 12px 36px;
+}
+
+.bible-quote-verses ol li::marker {
+  content: counter(list-item) ": ";
+}
+
+.standard-quote-text {
+  color: var(--Quote-Text);
+  font-style: italic;
+  margin: 0;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.standard-quote-source {
+  color: var(--Quote-Source);
+  text-align: center;
+  text-shadow: 1px 1px 2px var(--Quote-Source-Shadow); /* offset-x | offset-y | blur-radius | color */
+  margin: 8px 15px 0px 15px; /* Top - Right - Bottom - Left */
+}
+
+.zen-comment-text {
+  font-family: "Georgia";
+  color: var(--Old-Mauve);
+  font-style: italic;
+  text-align: left;
+}
+
+.zen-quote-source {
+  color: var(--Quote-Source);
+  font-style: italic;
+  margin: 8px 0px 16px 0px; /* Top - Right - Bottom - Left */
+  text-align: left;
+}
+
+.youtube-line {
+  color: var(--Breadcrumb);
+  display: flex;
+  font-family: "Cabin Condensed";
+  font-size: 2.3rem;
+  justify-content: flex-end;
+}
+
+.youtube-logo {
+  position: relative;
+  margin-top: 4px;
+  margin-left: 11px;
+  margin-right: 0px;
+  font-size: 32px;
+  color: red;
+}
+
+.youtube-text {
+  vertical-align: middle;
+  margin-top: 3px;
+  margin-left: 5px;
+  margin-right: 0px;
+}
+
+/* unvisited link */
+.youtube-text a:link {
+  color: var(--Breadcrumb);
+  text-decoration: none;
+}
+
+/* visited link */
+.youtube-text a:visited {
+  color: var(--Breadcrumb);
+  text-decoration: none;
+}
+
+/* mouse over link */
+.youtube-text a:hover {
+  color: var(--Breadcrumb-Hover);
+  text-decoration: none;
+}
+
+/* selected link */
+.youtube-text a:active {
+  color: var(--Breadcrumb-Hover);
+  text-decoration: none;
+}
+
+.Sanskrit-Block {
+  border-top: 2px solid var(--Salmon);
+  border-bottom: 2px solid var(--Salmon);
+  text-align: center;
+}
+
+.Sanskrit-Text {
+  font-family: "Sanskrit2003", serif;
+  font-size: 5.5rem;
+  color: var(--Sanskrit-Red);
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.Sanskrit-Text-Translation {
+  font-family: "Courgette", serif;
+  font-size: 2.8rem;
+  color: var(--Saddle-Brown);
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.Sanskrit-Word-or-Phrase-Devanagari {
+  font-family: "Sanskrit2003", serif;
+  font-size: 5rem;
+  color: var(--Sanskrit-Red);
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.Sanskrit-Word-or-Phrase-Translation {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--Gelasio-Green);
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.Sanskrit-Word-or-Phrase-Pronunciation {
+  font-family: "Gentium Plus", serif;
+  font-size: 2rem;
+  color: #3A68C4;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.Sanskrit-Word-or-Phrase-Definition {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 1.4rem;
+  color: var(--Default-Body-Text);
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+/* * Spacer (<hr> Like) */
+.thinline {
+  height: 0;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent;
+  border-top: 1px solid var(--Salmon);
+  border-bottom: 1px solid darkgray;
+  width: 90%;
+  text-align: center;
+}
+
+.pageDebugInfo {
+  border: 2px solid red;
+  margin: auto;
+  padding: 10px 30px 10px 30px;
+  width: 66%;
+}
+
+/* ======================================================================= */
+/* HOME PAGE */
+/* Default Layout is 2 Columns */
+.css-pagegrid-homepage {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "gtaHP-page-header  gtaHP-page-header" "gtaHP-page-content gtaHP-right-sidebar" "gtaHP-page-footer  gtaHP-page-footer";
+}
+
+.pagegrid-homepage-header {
+  grid-area: gtaHP-page-header;
+  padding-bottom: 20px;
+}
+
+/* Custom Element for readability. Set to display: block to equal <div>
+    (not so necessary on home page but vital on many pages */
+homepage-page-content {
+  display: block;
+}
+
+.pagegrid-homepage-page-content {
+  grid-area: gtaHP-page-content;
+  background-color: var(--Boxed-Content-Background);
+  margin-left: 30px;
+  padding-left: 30px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.pagegrid-homepage-right-sidebar {
+  grid-area: gtaHP-right-sidebar;
+  background-color: var(--Boxed-Content-Background);
+  margin-left: 20px;
+  margin-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+.pagegrid-homepage-footer {
+  grid-area: gtaHP-page-footer;
+  background-color: var(--Salmon);
+  border-bottom: 2px solid whitesmoke;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+/* ======================================================================= */
+/* FULL WIDTH PAGE */
+/* Default Layout is 3 Columns */
+.css-pagegrid-fullwidth {
+  display: grid;
+  grid-template-columns: 5% auto 5%;
+  grid-template-areas: "gtaFW-page-header  gtaFW-page-header  gtaFW-page-header" "gtaFW-left-sidebar gtaFW-page-content gtaFW-right-sidebar" "gtaFW-page-footer  gtaFW-page-footer  gtaFW-page-footer";
+}
+
+.pagegrid-fullwidth-header {
+  grid-area: gtaFW-page-header;
+  padding-bottom: 20px;
+}
+
+.pagegrid-fullwidth-left-sidebar {
+  grid-area: gtaFW-left-sidebar;
+}
+
+/* Custom Element for readability. Set to display: block to equal <div>
+    (not so necessary on home page but vital on many pages */
+fullwidth-page-content {
+  display: block;
+}
+
+.pagegrid-fullwidth-page-content {
+  grid-area: gtaFW-page-content;
+  background-color: var(--Boxed-Content-Background);
+  margin-left: 30px;
+  padding-left: 30px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.pagegrid-fullwidth-right-sidebar {
+  grid-area: gtaFW-right-sidebar;
+}
+
+.pagegrid-fullwidth-footer {
+  grid-area: gtaFW-page-footer;
+  background-color: var(--Salmon);
+  border-bottom: 2px solid whitesmoke;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+/* ======================================================================= */
+/* SERIES TABLE OF CONTENT PAGE */
+/* Default Layout is 2 Columns */
+.css-pagegrid-series-toc {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "gtaSTOC-page-header  gtaSTOC-page-header" "gtaSTOC-page-content gtaSTOC-right-sidebar" "gtaSTOC-page-footer  gtaSTOC-page-footer";
+}
+
+.pagegrid-series-toc-header {
+  grid-area: gtaSTOC-page-header;
+  padding-bottom: 20px;
+}
+
+/* Custom Element for readability. Set to display: block to equal <div>
+    (not so necessary on home page but vital on many pages */
+series-toc-page-content {
+  display: block;
+}
+
+.pagegrid-series-toc-page-content {
+  grid-area: gtaSTOC-page-content;
+  background-color: var(--Boxed-Content-Background);
+  margin-left: 30px;
+  padding-left: 30px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.pagegrid-series-toc-right-sidebar {
+  grid-area: gtaSTOC-right-sidebar;
+  background-color: var(--Boxed-Content-Background);
+  margin-left: 20px;
+  margin-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+.pagegrid-series-toc-footer {
+  grid-area: gtaSTOC-page-footer;
+  background-color: var(--Salmon);
+  border-bottom: 2px solid whitesmoke;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+/* --- */
+.pc-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  margin-top: 24px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.container-GQ-Post-HeroImage {
+  background-color: var(--Pine);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 2px solid var(--Border-Red);
+  margin: 0px 10px 0px 10px;
+  height: 772px;
+  width: 513px;
+}
+
+.container-GQ-Post-HeroImage img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.hero-image-text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  background-color: aquamarine;
+}
+
+.hero-image-attribution {
+  font-family: "Libre Caslon Text";
+  font-size: 1rem;
+  text-align: right;
+  margin: 4px 100px 0px 100px;
+}
+
+.t1-container {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+}
+.t1-container > *:not(.tab-wrap) {
+  padding: 0 80px;
+}
+
+.tab-wrap {
+  transition: 0.3s box-shadow ease;
+  border-radius: 6px;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  list-style: none;
+  background-color: #fff;
+  margin: 40px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.tab-wrap:hover {
+  box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);
+}
+
+.tab {
+  display: none;
+}
+.tab:checked:nth-of-type(1) ~ .tab__content:nth-of-type(1) {
+  opacity: 1;
+  transition: 0.5s opacity ease-in, 0.8s transform ease;
+  position: relative;
+  top: 0;
+  z-index: 100;
+  transform: translateY(0px);
+  text-shadow: 0 0 0;
+}
+.tab:checked:nth-of-type(2) ~ .tab__content:nth-of-type(2) {
+  opacity: 1;
+  transition: 0.5s opacity ease-in, 0.8s transform ease;
+  position: relative;
+  top: 0;
+  z-index: 100;
+  transform: translateY(0px);
+  text-shadow: 0 0 0;
+}
+.tab:checked:nth-of-type(3) ~ .tab__content:nth-of-type(3) {
+  opacity: 1;
+  transition: 0.5s opacity ease-in, 0.8s transform ease;
+  position: relative;
+  top: 0;
+  z-index: 100;
+  transform: translateY(0px);
+  text-shadow: 0 0 0;
+}
+.tab:checked:nth-of-type(4) ~ .tab__content:nth-of-type(4) {
+  opacity: 1;
+  transition: 0.5s opacity ease-in, 0.8s transform ease;
+  position: relative;
+  top: 0;
+  z-index: 100;
+  transform: translateY(0px);
+  text-shadow: 0 0 0;
+}
+.tab:checked:nth-of-type(5) ~ .tab__content:nth-of-type(5) {
+  opacity: 1;
+  transition: 0.5s opacity ease-in, 0.8s transform ease;
+  position: relative;
+  top: 0;
+  z-index: 100;
+  transform: translateY(0px);
+  text-shadow: 0 0 0;
+}
+.tab:first-of-type:not(:last-of-type) + label {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.tab:not(:first-of-type):not(:last-of-type) + label {
+  border-radius: 0;
+}
+.tab:last-of-type:not(:first-of-type) + label {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.tab:checked + label {
+  background-color: #fff;
+  box-shadow: 0 -1px 0 #fff inset;
+  cursor: default;
+}
+.tab:checked + label:hover {
+  box-shadow: 0 -1px 0 #fff inset;
+  background-color: #fff;
+}
+.tab + label {
+  box-shadow: 0 -1px 0 #eee inset;
+  border-radius: 6px 6px 0 0;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  color: #333;
+  flex-grow: 3;
+  text-align: center;
+  background-color: #f2f2f2;
+  user-select: none;
+  text-align: center;
+  transition: 0.3s background-color ease, 0.3s box-shadow ease;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.tab + label:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 0 #f4f4f4 inset;
+}
+.tab__content {
+  padding: 10px 25px;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+  left: 0;
+  transform: translateY(-3px);
+  border-radius: 6px;
+}
