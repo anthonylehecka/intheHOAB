@@ -1,0 +1,75 @@
+#
+# Author: Chester Catalano
+# Updated: 12/22/2023
+# Circa 2020: Hugo switched to Goldmark Markup.
+#
+
+# These variables are used by Hugo in compiling your site.
+# SOME of these variables -- let me repeat -- SOME of these variables
+#      are also copied to the .Site scope for use in your templates.
+#      See https://gohugo.io/variables/site/ for the complete list
+# Usage Example: .Site.Title would return the string The Garden Griller
+# NOTE: You must use the cases as defined for these key/value pairs
+# In the above Usage Example, .Site.Title is found; .Site.title is not
+# =============================================================================
+#
+# 12/21/2023
+# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+ignoreErrors = ["error-remote-getjson"]
+
+  author = "Chester Catalano"
+  baseURL = "https://intheheartofallbeings.org"
+  buildDrafts = true
+
+  disablePathToLower = true
+
+  languageCode = "en-us"
+
+  themesDir = "Themes"
+  theme = "HOAB-Theme"
+  title = "In The Heart of All Beings"
+
+# =============================================================================
+#
+#
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xHTML = false
+#
+#
+# =============================================================================
+
+# params usage is .Site.Params.paramName
+# Example .Site.Params.AuthorName would return the string Fred Hix
+# NOTE that the same key name can be used in Params so .Site.Params.Title will return
+#      the value below, not the value of .Site.Title
+[params]
+  p_Title = "In The Heart of All Beings"
+  p_Subtitle = "Tagline"
+  p_DebugPage = false
+
+[params.authors]
+  [params.authors.FredHix]
+    name = "Chester Catalano"
+    bio = "A jolly good fellow"
+    thumbnail = "missing"
+
+
+[permalinks]
+  posts = "/:slug/"
